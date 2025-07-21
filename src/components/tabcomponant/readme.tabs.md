@@ -66,14 +66,23 @@ onSelect: ট্যাব চেঞ্জ হলে handleSelect() কল হয়
 
 ### এখানে আমরা tabs অ্যারে থেকে প্রতিটি ট্যাব বানাচ্ছি।
 
-tab.tabTitle হচ্ছে ট্যাবের নাম (যেমন: About, Skill)
 
+<div className="h-[490px] overflow-y-auto p-4">
+ 
+এই ডিভটার ভিতরে TabPanel রাখার কারণ হচ্ছে — 
+যাতে ট্যাবের ভিতরের কন্টেন্ট (text বা component) বেশি হয়ে গেলে, সেটা স্ক্রলের মাধ্যমে দেখা যায়।
+কন্টেন্ট যদি div-এর height (490px) ছাড়িয়ে যায়, তাহলে scroll bar দেখাবে।
+
+tab.tabTitle হচ্ছে ট্যাবের নাম (যেমন: About, Skill)
+```bash
+    <div className="h-[490px] overflow-y-auto p-4">
       {tabs.map((tab, index) => (
         <TabPanel className="ml-3" key={index}>
           {tab.tabContent}
         </TabPanel>
       ))}
-
+      </div>
+```
 ### এখানে প্রতিটি ট্যাবের জন্য একটি করে <TabPanel> তৈরি করা হচ্ছে।
 
 tab.tabContent হচ্ছে ঐ ট্যাবের ভিতরের কনটেন্ট।

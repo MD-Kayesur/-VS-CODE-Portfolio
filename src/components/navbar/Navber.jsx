@@ -45,9 +45,25 @@ const Navber = () => {
   ];
    const navbers = (
     <>
-    {navberLinks.map((link, index) => (
+    {navberLinks.slice(0,4).map((link, index) => (
   <div key={index} className="dropdown dropdown-hover mx-2">
-    <button tabIndex={0} className="btn btn-outline btn-xs m-1">
+    <button tabIndex={0} className="btn btn-outline border-none btn-xs m-1">
+      {link.linkTitle}
+    </button>
+    <ul tabIndex={0} className="dropdown-content z-[1] menu  shadow bg-base-100 rounded-box w-52">
+      <li><a>Item 1</a></li>
+      <li><a>Item 2</a></li>
+    </ul>
+  </div>
+))}
+    </>
+  );
+
+   const navberss = (
+    <>
+    {navberLinks.slice(4,8).map((link, index) => (
+  <div key={index} className="dropdown dropdown-hover mx-2">
+    <button tabIndex={0} className="btn btn-outline border-none btn-xs m-1">
       {link.linkTitle}
     </button>
     <ul tabIndex={0} className="dropdown-content z-[1] menu  shadow bg-base-100 rounded-box w-52">
@@ -110,6 +126,7 @@ const Navber = () => {
                     className="input input-bordered w-24 md:w-auto"
                   />
                 </li>
+                {navberss}
             </ul>
           </div>
           <div className="navbar-end">

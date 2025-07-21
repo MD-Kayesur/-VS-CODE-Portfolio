@@ -14,7 +14,7 @@ const TabsComponent = () => {
 
   return (
     <Tabs
-      className="w-11/12 mx-auto    h-[calc(100vh-100px)] md:h-[calc(100vh-120px)]-ml-px"
+      className="w-11/12 mx-auto    h-[calc(100vh-100px)] md:h-[calc(100vh-120px)] -ml-px"
       selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
       onSelect={handleSelect}>
       <TabList className={"border-none w-full -mt-1 bg-red-400"}>
