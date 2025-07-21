@@ -18,7 +18,7 @@ const DropdownComponent = () => {
     },
     {
       link: "/projects",
-      title: "Project",
+      title: "projects",
     },
   ];
 
