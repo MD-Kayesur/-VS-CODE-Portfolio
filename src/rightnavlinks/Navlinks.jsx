@@ -3,8 +3,8 @@ import { navLinks } from "../utils/data/Iconlink.data";
  
 const Navlinks = () => {
   return (
-    <div className="w-16 hidden md:block bg-black">
-      <ul className="flex flex-col items-center justify-between h-full py-6">
+    <div className="w-10 hidden  pl-4 md:block bg-black">
+      <ul className="flex  flex-col items-center justify-between h-full py-6">
         {/* Main Nav Links */}
         {/* <div>
           {navLinks.slice(0, 5).map((link, index) => (
@@ -17,7 +17,7 @@ const Navlinks = () => {
         {/* Bottom Dropdowns */}
         <div className="flex flex-col items-center gap-3 mb-9">
           {navLinks.map((link, index) => (
-            <li className="text-white mt-6" key={index}>
+            <li className="text-white cursor-pointer mt-6" key={index}>
               <div className="dropdown dropdown-end">
                 <div tabIndex={0} role="button">
                   <div className="w-10">{link.icon}</div>
