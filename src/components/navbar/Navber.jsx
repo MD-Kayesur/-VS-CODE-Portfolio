@@ -7,6 +7,12 @@ import Dashbors from "../dashbord/Dashbors";
  
 const Navber = () => {
 
+
+const handleCross =()=>{
+    alert ("nothing will happen")
+}
+
+
     const current =useLocation()
     console.log(current);
   const navberLinks = [
@@ -107,10 +113,10 @@ const Navber = () => {
               </ul>
             </div>
 
-            <a className="btn btn-ghost text-xl">
+             
             
-              <img className="w-20" src={img} alt="" />
-            </a>
+              <img className="w-16" src={img} alt="" />
+            
           </div>
           <div className="navbar hidden -ml-75 lg:flex">
             <ul className="menu menu-horizontal px-1">
@@ -130,7 +136,7 @@ const Navber = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <NavLink className="btn  btn-primary btn-outline ">
+            <NavLink onClick={handleCross} className="btn  btn-primary btn-outline ">
             
               <GiCrossedSabres></GiCrossedSabres>
             </NavLink>

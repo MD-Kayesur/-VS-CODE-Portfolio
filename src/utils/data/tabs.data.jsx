@@ -1,12 +1,9 @@
+import About from "../../components/About/About";
+
 export const tabs = [
   {
     tabTitle: "About",
-    tabContent: (
-      <p>
-        About erspiciatis expedita a ratione unde dolore, molestiae cum
-        exercitat quae aspernatur. Accusamus repellat sed quia laboriosam a
-      </p>
-    ),
+    tabContent: <About />,
     path: "/about",
   },
   {
