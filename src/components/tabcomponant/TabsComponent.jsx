@@ -5,6 +5,12 @@ import { useEffect, useState } from "react";
 import { tabs as allTabs } from "../../utils/data/tabs.data";
 
 const TabsComponent = () => {
+  const DefaultContent = () => (
+    <div className="text-center w-11/12 mx-auto mt-50 text-gray-500 text-lg  -center">
+      👋 Welcome! To my portfolio.
+    </div>
+  );
+
   const location = useLocation();
   const navigate = useNavigate();
   const [openTabs, setOpenTabs] = useState([]);
@@ -43,35 +49,43 @@ const TabsComponent = () => {
       }
     }
   };
-
+// max-h-[500px] overflow-y-auto p-4
   return (
-    <Tabs
-      className="w-11/12 mx-auto h-[calc(100vh-100px)] md:h-[calc(100vh-120px)] -ml-px"
-      selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
-      onSelect={handleSelect}>
-      <TabList className="border-none w-full -mt-1 bg-red-400 flex space-x-1 px-2">
-        {openTabs.map((tab, index) => (
-          <Tab key={index} className="relative px-4 py-2 bg-white rounded-t-md">
-            <div className="flex items-center gap-2">
-              {tab.tabTitle}
-              <button
-                onClick={(e) => handleClose(e, index)}
-                className="text-xs text-gray-500 hover:text-red-500">
-                ✕
-              </button>
-            </div>
-          </Tab>
-        ))}
-      </TabList>
+    <div className="w-11/12 mx-auto  h-[calc(100vh-100px)]  hidden md:block md:h-[calc(100vh-80px)]  -ml-px">
+      {openTabs.length > 0 ? (
+        <Tabs
+          selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
+          onSelect={handleSelect}>
+          <TabList className="border-none w-full cursor-pointer -mt-1 bg-red-400 flex space-x-1 ">
+            {openTabs.map((tab, index) => (
+              <Tab
+                key={index}
+                className="relative px-4 py-2  cor
+           rounded-t-md">
+                <div className="flex items-center gap-3">
+                  {tab.tabTitle}
+                  <button
+                    onClick={(e) => handleClose(e, index)}
+                    className="text-xs text-gray-500 cursor-pointer  ">
+                    ✕
+                  </button>
+                </div>
+              </Tab>
+            ))}
+          </TabList>
 
-      <div className="h-[490px] overflow-y-auto p-4">
-        {openTabs.map((tab, index) => (
-          <TabPanel className="ml-3" key={index}>
-            {tab.tabContent}
-          </TabPanel>
-        ))}
-      </div>
-    </Tabs>
+          <div className="lg:h-[490px]  md:h-[280px]   md:overflow-y-scroll p-4">
+            {openTabs.map((tab, index) => (
+              <TabPanel className="ml-3" key={index}>
+                {tab.tabContent}
+              </TabPanel>
+            ))}
+          </div>
+        </Tabs>
+      ) : (
+        <DefaultContent />
+      )}
+    </div>
   );
 };
 

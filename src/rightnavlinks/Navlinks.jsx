@@ -3,7 +3,7 @@ import { navLinks } from "../utils/data/Iconlink.data";
  
 const Navlinks = () => {
   return (
-    <div className="w-10 hidden  pl-4 md:block bg-black">
+    <div className="w-10 hidden  pl-4 lg:block bg-black">
       <ul className="flex  flex-col items-center justify-between h-full py-6">
         {/* Main Nav Links */}
         {/* <div>
@@ -24,7 +24,7 @@ const Navlinks = () => {
                 </div>
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content bg-black rounded-box z-1 -top-9 left-12 p-2 shadow"
+                  className="menu menu-sm dropdown-content bg-black rounded-box z-1 w-38 -top-9 left-9  shadow"
                 >
                   {link.dropdownItems.map((item, idx) => (
                     <li key={idx}>

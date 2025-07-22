@@ -51,14 +51,14 @@ const Navber = () => {
     <>
       {navberLinks.slice(0, 4).map((link, index) => (
         <div key={index} className="dropdown dropdown-hover mx-2">
-          <button
+          <NavLink to="/about"
             tabIndex={0}
             className="btn btn-outline border-none btn-xs m-1">
             {link.linkTitle}
-          </button>
+          </NavLink>
           <ul
             tabIndex={0}
-            className="dropdown-content z-[1] menu  shadow bg-base-100 rounded-box w-52">
+            className="dropdown-content z-[1] menu   hidden shadow bg-base-100 rounded-box w-52">
             <li>
               <a>Item 1</a>
             </li>
@@ -82,7 +82,7 @@ const Navber = () => {
           </button>
           <ul
             tabIndex={0}
-            className="dropdown-content z-[1] menu  shadow bg-base-100 rounded-box w-52">
+            className="dropdown-content z-[1]  shadow bg-base-100 rounded-box w-52">
             <li>
               <a>Item 1</a>
             </li>
@@ -96,7 +96,7 @@ const Navber = () => {
   );
   return (
     <>
-      <div className="bg-gray-200   ">
+      <div className="bg-gray-200  ">
         <div className="  justify-between items-center flex ">
           <div className="navbar-start ">
             <div className="dropdown">
@@ -126,7 +126,7 @@ const Navber = () => {
             </div>
 
             <div>
-              <img className="w-13" src={img} alt="" />
+              <img className="md:w-20  w-13" src={img} alt="" />
             </div>
           </div>
           <div className="navbar hidden -ml-75 lg:flex">
@@ -153,7 +153,7 @@ const Navber = () => {
                 {/* <GiCrossedSabres></GiCrossedSabres> */}
               </NavLink>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end hidden md:block">
               <NavLink
                 onClick={handleCross}
                 className="btn btn-xs btn-primary btn-outline ">
