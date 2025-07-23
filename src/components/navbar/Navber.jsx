@@ -15,7 +15,7 @@ const Navber = () => {
   console.log(current);
   const navberLinks = [
     {
-      link: "/about",
+      link: "/dashbors/about",
       linkTitle: "About",
     },
     {
@@ -47,25 +47,41 @@ const Navber = () => {
       linkTitle: "Skill",
     },
   ];
+
+
+
+  {navberLinks.slice(0, 4).map((links, index) => (
+  <div key={index} className="dropdown dropdown-hover mx-2">
+    <NavLink
+      to={links.link}
+      tabIndex={0}
+      className="btn btn-outline border-none btn-xs m-1"
+    >
+      {links.linkTitle}
+    </NavLink>
+  </div>
+))}
   const navbers = (
     <>
       {navberLinks.slice(0, 4).map((link, index) => (
         <div key={index} className="dropdown dropdown-hover mx-2">
-          <NavLink to="/about"
+          <NavLink
+      to={link.link}
+      tabIndex={0}
+      className="btn btn-outline border-none btn-xs m-1"
+    >
+      {link.linkTitle}
+    </NavLink>
+          {/* <ul
             tabIndex={0}
-            className="btn btn-outline border-none btn-xs m-1">
-            {link.linkTitle}
-          </NavLink>
-          <ul
-            tabIndex={0}
-            className="dropdown-content z-[1] menu   hidden shadow bg-base-100 rounded-box w-52">
+            className="dropdown-content z-[1] menu  hidden md:block   shadow bg-base-100 rounded-box w-52">
             <li>
               <a>Item 1</a>
             </li>
             <li>
               <a>Item 2</a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       ))}
     </>
@@ -126,7 +142,7 @@ const Navber = () => {
             </div>
 
             <div>
-              <img className="md:w-20  w-13" src={img} alt="" />
+              <img className="md:w-17  w-13" src={img} alt="" />
             </div>
           </div>
           <div className="navbar hidden -ml-75 lg:flex">

@@ -1,4 +1,5 @@
 import About from "../../components/About/About";
+import Introduction from "../../components/About/Introduction";
 
 export const tabs = [
   {
@@ -9,253 +10,22 @@ export const tabs = [
   {
     tabTitle: "Skill",
     tabContent: (
-      <p>
-        skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime aliacusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.
-      </p>
+      <p>  skill enim hic dignissimos nobis quasi ex? </p>
     ),
     path: "/skill",
   },
   {
     tabTitle: "Project",
     tabContent: (
-      <p>
-        projects cupiditatcusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.cusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non. skill enim hic dignissimos nobis quasi ex? Atque dolor, eaque neque
-        magnam vero accusamus ducimus dicta at,projects cupiditate consequuntur
-        odit aperiam provident. Lorem, ipsum dol o ipsum dolor sit amet
-        consectetur adipisicing eli maxime alias non.e consequuntur odit aperiam provident. Lor em, ipsum
-        dolor sit amet consectetur adipisicing elit. Itaque vero
-        molestiaeprojects cupiditate consequuntur odit ape minus, provident
-        delectus unde! Aliquam debitis officia culpa molestiae
-      </p>
+      <p>  project enim hic dignissimos nobis quasi ex? </p>
     ),
     path: "/projects",
+  },
+  {
+    tabTitle: "Introduction",
+    tabContent: (
+       <Introduction></Introduction>
+    ),
+    path: "/introduction",
   },
 ];

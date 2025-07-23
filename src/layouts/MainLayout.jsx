@@ -1,19 +1,28 @@
-import React from 'react';
- import { Outlet } from 'react-router-dom';
-import Navber from '../components/navbar/Navber';
-import Dashbors from '../components/dashbord/Dashbors';
- 
+import React from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import Navber from "../components/navbar/Navber";
+import Dashbors from "../components/dashbord/Dashbors";
 
 const MainLayout = () => {
-    return (
-        <div >
-            <Navber></Navber>
-            
-            <div>
-                <Dashbors></Dashbors>
-            </div>
+  const current = useLocation();
+  console.log(current);
+
+  return (
+    <div>
+      <Navber />
+
+      <div>
+        {/* <div className="ml-3 ">
+  <Outlet />
+</div> */}
+        <div className="hidden md:block">
+          {" "}
+          <Dashbors></Dashbors>
         </div>
-    );
+       
+      </div>
+    </div>
+  );
 };
 
 export default MainLayout;

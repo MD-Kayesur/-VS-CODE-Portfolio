@@ -3,14 +3,13 @@ import Navlinks from "../../rightnavlinks/Navlinks";
 import Explore from "../Explore/Explore";
 import TabsComponent from "../tabcomponant/TabsComponent";
  
-const Dashbors = ({hi}) => {
-console.log(hi,"dashbord");
-
+const Dashbors = ( ) => {
+ 
 
  
   return (
     <>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden hidden md:block ">
         <div className="   flex   ">
           <div className=" flex ">
             <Navlinks />

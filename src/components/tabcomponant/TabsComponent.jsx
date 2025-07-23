@@ -11,7 +11,7 @@ const TabsComponent = () => {
     </div>
   );
 
-  const location = useLocation();
+   const location = useLocation();
   const navigate = useNavigate();
   const [openTabs, setOpenTabs] = useState([]);
 
@@ -49,24 +49,23 @@ const TabsComponent = () => {
       }
     }
   };
-// max-h-[500px] overflow-y-auto p-4
   return (
     <div className="w-11/12 mx-auto  h-[calc(100vh-100px)]  hidden md:block md:h-[calc(100vh-80px)]  -ml-px">
       {openTabs.length > 0 ? (
         <Tabs
           selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
           onSelect={handleSelect}>
-          <TabList className="border-none w-full cursor-pointer -mt-1 bg-red-400 flex space-x-1 ">
+          <TabList className="border-none w-full cursor-pointer  -mt-1 bg-gray-200 flex space-x-1 ">
             {openTabs.map((tab, index) => (
               <Tab
                 key={index}
-                className="relative px-4 py-2  cor
+                className="relative px-4 py-2  hover:bg-base-300 cor
            rounded-t-md">
                 <div className="flex items-center gap-3">
                   {tab.tabTitle}
                   <button
                     onClick={(e) => handleClose(e, index)}
-                    className="text-xs text-gray-500 cursor-pointer  ">
+                    className="text-xs text-red-500 cursor-pointer  ">
                     ✕
                   </button>
                 </div>

@@ -8,6 +8,10 @@ const DropdownComponent = () => {
   };
 
   const navLinks = [
+     {
+      link: "/introduction",
+      title: "Introduction",
+    },
     {
       link: "/about",
       title: "About",
@@ -20,6 +24,7 @@ const DropdownComponent = () => {
       link: "/projects",
       title: "projects",
     },
+   
   ];
 
   return (

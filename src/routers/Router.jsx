@@ -8,6 +8,7 @@ import About from "../components/About/About";
 import Skill from "../components/About/Skill";
 import TabsComponent from "../components/tabcomponant/TabsComponent";
 import Project from "../components/About/Project";
+import Introduction from "../components/About/Introduction";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
         element: <About></About>,
       },
       {
+        path: "/introduction",
+        element: <Introduction></Introduction>,
+      },
+      {
         path: "/skill",
         element: <Skill></Skill>,
       },
@@ -40,6 +45,11 @@ export const router = createBrowserRouter([
     path: "/dashbors",
     element: <Dashbors />,
     children: [
+
+       {
+        path: "about",
+        element: <About></About>,
+      },
       //     // {
       //     //     path:"Navigation",
       //     //     element:<Navigation></Navigation>
