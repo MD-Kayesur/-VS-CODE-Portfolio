@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navber from "../components/navbar/Navber";
 import Dashbors from "../components/dashbord/Dashbors";
 
 const MainLayout = () => {
+   
   const current = useLocation();
   console.log(current);
 
@@ -11,8 +12,8 @@ const MainLayout = () => {
     <div>
       <Navber />
 
-      <div>
-        <div className="ml-3 ">
+      <div >
+        <div className="ml-3 md:hidden">
    <Outlet />
 </div>
         <div className="hidden md:block">

@@ -57,7 +57,7 @@ const Navber = () => {
           </div>
 
           {/* Center - Desktop NavLinks */}
-          <div className="hidden lg:flex">
+          <div className="hidden  lg:flex">
             <NavLinks navbarLinks={navbarLinks} mode="desktop" />
           </div>
 
@@ -71,10 +71,13 @@ const Navber = () => {
           </div>
         </div>
 
-        {/* Mobile Dropdown Nav */}
         {isMobileMenuOpen && (
           <div className="lg:hidden px-4 pb-4">
-            <NavLinks navbarLinks={navbarLinks}  mode="mobile"/>
+            <NavLinks
+              navbarLinks={navbarLinks}
+              mode="mobile"
+              onLinkClick={() => setIsMobileMenuOpen(false)} // ✅ Close menu on click
+            />
           </div>
         )}
       </div>

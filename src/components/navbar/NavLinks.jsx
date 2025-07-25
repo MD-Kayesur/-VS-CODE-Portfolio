@@ -1,31 +1,24 @@
+ 
+
+
+
 import { Link } from "react-router-dom";
 
-const NavLinks = ({ navbarLinks, mode = "desktop" }) => {
-  const isMobile = mode === "mobile";
-
+const NavLinks = ({ navbarLinks, mode, onLinkClick }) => {
   return (
-    <div
-      className={isMobile ? "lg:hidden" : "navbar hidden lg:flex -ml-20"}
-    >
-      <ul
-        className={`menu ${
-          isMobile
-            ? "menu-vertical px-2 py-2 bg-gray-100 rounded shadow w-full"
-            : "menu-horizontal px-1"
-        }`}
-      >
-        {navbarLinks.map((link, index) => (
-          <li key={index} className="mx-2">
-            <Link
-              to={link.link}
-              className="btn btn-outline border-none btn-xs m-1 w-full"
-            >
-              {link.linkTitle}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className={`flex flex-col ${mode === "desktop" ? "lg:flex-row" : ""}`}>
+      {navbarLinks.map(({ link, linkTitle }) => (
+        <li key={link} className="my-1 lg:my-0   inline-block m-auto lg:mx-2">
+          <Link
+            to={link}
+            onClick={onLinkClick} // ✅ Trigger callback to close mobile menu
+            className="text-gray-700 p-2 md:w-full btn btn-xs "  
+          >
+            {linkTitle}
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 };
 

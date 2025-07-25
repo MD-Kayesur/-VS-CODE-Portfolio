@@ -1,5 +1,7 @@
 import About from "../../components/About/About";
 import Introduction from "../../components/About/Introduction";
+import Project from "../../components/About/Project";
+import Skill from "../../components/About/Skill";
 
 export const tabs = [
   {
@@ -9,16 +11,14 @@ export const tabs = [
   },
   {
     tabTitle: "Skill",
-    tabContent: (
-      <p>  skill enim hic dignissimos nobis quasi ex? </p>
-    ),
+    tabContent: <Skill></Skill>
+      
+    ,
     path: "/skill",
   },
   {
     tabTitle: "Project",
-    tabContent: (
-      <p>  project enim hic dignissimos nobis quasi ex? </p>
-    ),
+    tabContent: <Project></Project>,
     path: "/projects",
   },
   {
