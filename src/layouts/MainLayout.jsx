@@ -12,9 +12,9 @@ const MainLayout = () => {
       <Navber />
 
       <div>
-        {/* <div className="ml-3 ">
-  <Outlet />
-</div> */}
+        <div className="ml-3 ">
+   <Outlet />
+</div>
         <div className="hidden md:block">
           {" "}
           <Dashbors></Dashbors>

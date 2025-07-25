@@ -1,46 +1,23 @@
-// import React, { useState } from 'react';
+import { useState } from "react";
 import { GiCrossedSabres } from "react-icons/gi";
 import img from "../../assets/imgs/1749660883197-removebg-preview.png";
-import { Link, NavLink, useLocation } from "react-router-dom";
-// import Tabss from "../tabcomponant/TabsComponent";
-// import Dashbors from "../dashbord/Dashbors";
+import { Link } from "react-router-dom";
+
 import { RiLogoutCircleRLine } from "react-icons/ri";
 import { AiOutlineLogin } from "react-icons/ai";
+import NavLinks from "./NavLinks";
+
 const Navber = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const handleCross = () => {
     alert("nothing will happen");
   };
 
-  const current = useLocation();
-  console.log(current);
-  const navberLinks = [
+  const navbarLinks = [
     {
-      link: "/dashbors/about",
+      link: "/about",
       linkTitle: "About",
-    },
-    {
-      link: "/skill",
-      linkTitle: "Skill",
-    },
-    {
-      link: "/skill",
-      linkTitle: "Skill",
-    },
-    {
-      link: "/skill",
-      linkTitle: "Skill",
-    },
-    {
-      link: "/skill",
-      linkTitle: "Skill",
-    },
-    {
-      link: "/skill",
-      linkTitle: "Skill",
-    },
-    {
-      link: "/skill",
-      linkTitle: "Skill",
     },
     {
       link: "/skill",
@@ -48,81 +25,20 @@ const Navber = () => {
     },
   ];
 
-
-
-  {navberLinks.slice(0, 4).map((links, index) => (
-  <div key={index} className="dropdown dropdown-hover mx-2">
-    <NavLink
-      to={links.link}
-      tabIndex={0}
-      className="btn btn-outline border-none btn-xs m-1"
-    >
-      {links.linkTitle}
-    </NavLink>
-  </div>
-))}
-  const navbers = (
-    <>
-      {navberLinks.slice(0, 4).map((link, index) => (
-        <div key={index} className="dropdown dropdown-hover mx-2">
-          <NavLink
-      to={link.link}
-      tabIndex={0}
-      className="btn btn-outline border-none btn-xs m-1"
-    >
-      {link.linkTitle}
-    </NavLink>
-          {/* <ul
-            tabIndex={0}
-            className="dropdown-content z-[1] menu  hidden md:block   shadow bg-base-100 rounded-box w-52">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 2</a>
-            </li>
-          </ul> */}
-        </div>
-      ))}
-    </>
-  );
-
-  const navberss = (
-    <>
-      {navberLinks.slice(4, 8).map((link, index) => (
-        <div key={index} className="dropdown dropdown-hover mx-2">
-          <button
-            tabIndex={0}
-            className="btn btn-outline border-none btn-xs m-1">
-            {link.linkTitle}
-          </button>
-          <ul
-            tabIndex={0}
-            className="dropdown-content z-[1]  shadow bg-base-100 rounded-box w-52">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 2</a>
-            </li>
-          </ul>
-        </div>
-      ))}
-    </>
-  );
   return (
     <>
-      <div className="bg-gray-200  ">
-        <div className="  justify-between items-center flex ">
-          <div className="navbar-start ">
-            <div className="dropdown">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost lg:hidden">
+      <div className="bg-gray-200 w-full">
+        <div className="flex justify-between items-center px-4 py-2">
+          {/* Left - Logo and Hamburger */}
+          <div className="flex items-center gap-2">
+            {/* Hamburger Button */}
+            <div className="lg:hidden">
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="btn btn-ghost btn-sm">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -130,54 +46,37 @@ const Navber = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />{" "}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
-              </div>
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content   rounded-box z-1 mt-3 w-52 p-2 shadow">
-                {navbers}
-              </ul>
+              </button>
             </div>
 
-            <div>
-              <img className="md:w-17  w-13" src={img} alt="" />
-            </div>
-          </div>
-          <div className="navbar hidden -ml-75 lg:flex">
-            <ul className="menu menu-horizontal px-1">
-              {navbers}
-
-              <li>
-                <input
-                  type="text"
-                  placeholder="Search"
-                  className="input input-bordered w-24 md:w-auto"
-                />
-              </li>
-              {navberss}
-            </ul>
+            {/* Logo */}
+            <img className="w-14 md:w-20" src={img} alt="logo" />
           </div>
 
-          <div className="flex justify-between gap-5 mr-5">
-            <div className="navbar-end">
-              <NavLink
-                onClick={handleCross}
-                className="btn btn-xs btn-primary btn-outline ">
-                <AiOutlineLogin className="rotate-90"></AiOutlineLogin>
-                {/* <GiCrossedSabres></GiCrossedSabres> */}
-              </NavLink>
-            </div>
-            <div className="navbar-end hidden md:block">
-              <NavLink
-                onClick={handleCross}
-                className="btn btn-xs btn-primary btn-outline ">
-                <RiLogoutCircleRLine></RiLogoutCircleRLine>
-              </NavLink>
-            </div>
+          {/* Center - Desktop NavLinks */}
+          <div className="hidden lg:flex">
+            <NavLinks navbarLinks={navbarLinks} mode="desktop" />
+          </div>
+
+          {/* Right - Login Button */}
+          <div className="flex items-center gap-3">
+            <Link
+              onClick={handleCross}
+              className="btn btn-xs btn-primary btn-outline">
+              <AiOutlineLogin className="rotate-90" />
+            </Link>
           </div>
         </div>
+
+        {/* Mobile Dropdown Nav */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden px-4 pb-4">
+            <NavLinks navbarLinks={navbarLinks}  mode="mobile"/>
+          </div>
+        )}
       </div>
     </>
   );

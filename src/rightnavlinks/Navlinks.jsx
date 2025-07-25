@@ -15,7 +15,7 @@ const Navlinks = () => {
         </div> */}
 
         {/* Bottom Dropdowns */}
-        <div className="flex flex-col items-center gap-3 mb-9">
+        <div className="flex flex-col items-center gap-3 mb-5">
           {navLinks.map((link, index) => (
             <li className="text-white cursor-pointer mt-6" key={index}>
               <div className="dropdown dropdown-end">
