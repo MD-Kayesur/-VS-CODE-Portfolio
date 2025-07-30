@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { RiLogoutCircleRLine } from "react-icons/ri";
 import { AiOutlineLogin } from "react-icons/ai";
 import NavLinks from "./NavLinks";
+import { NavberLinks } from "../../utils/data/NavberLinks";
 
 const Navber = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,20 +15,11 @@ const Navber = () => {
     alert("nothing will happen");
   };
 
-  const navbarLinks = [
-    {
-      link: "/about",
-      linkTitle: "About",
-    },
-    {
-      link: "/skill",
-      linkTitle: "Skill",
-    },
-  ];
+ 
 
   return (
     <>
-      <div className="bg-gray-200 w-full">
+      <div className="bg-gray-200 h-19 w-full">
         <div className="flex justify-between items-center px-4 py-2">
           {/* Left - Logo and Hamburger */}
           <div className="flex items-center gap-2">
@@ -53,12 +45,12 @@ const Navber = () => {
             </div>
 
             {/* Logo */}
-            <img className="w-14 md:w-20" src={img} alt="logo" />
+            <img className="w-14 md:w-20 -mt-2" src={img} alt="logo" />
           </div>
 
           {/* Center - Desktop NavLinks */}
-          <div className="hidden  lg:flex">
-            <NavLinks navbarLinks={navbarLinks} mode="desktop" />
+          <div className="hidden -mt-2 lg:flex">
+            <NavLinks navbarLinks={NavberLinks} mode="desktop" />
           </div>
 
           {/* Right - Login Button */}
@@ -74,7 +66,7 @@ const Navber = () => {
         {isMobileMenuOpen && (
           <div className="lg:hidden px-4 pb-4">
             <NavLinks
-              navbarLinks={navbarLinks}
+              navbarLinks={NavberLinks}
               mode="mobile"
               onLinkClick={() => setIsMobileMenuOpen(false)} // ✅ Close menu on click
             />

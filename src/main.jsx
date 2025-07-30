@@ -6,9 +6,11 @@ import './index.css'
   RouterProvider,
 } from "react-router-dom";
 import { router } from './routers/Router';
+import MouseBurst from './routers/animation/MouseBurst';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <MouseBurst />
    <RouterProvider router={router} />
   </StrictMode>,
 )

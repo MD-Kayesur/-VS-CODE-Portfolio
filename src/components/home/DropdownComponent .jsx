@@ -41,13 +41,13 @@ const DropdownComponent = () => {
       </div>
 
       {isOpen && (
-        <ul className="ml-4 ">
+        <ul className=" ">
           {navLinks.map((navLink, index) => (
             <li key={index} className="mt-2 ">
               <NavLink
                 to={navLink.link}
                 className={({ isActive }) =>
-                  `block w-full py-1 text-sm ${
+                  `block w-full py-1 px-6 text-sm ${
                     isActive
                       ? "bg-blue-500 text-white"
                       : "hover:bg-gray-200 text-black"

@@ -1,7 +1,3 @@
- 
-
-
-
 import { Link } from "react-router-dom";
 
 const NavLinks = ({ navbarLinks, mode, onLinkClick }) => {
@@ -12,8 +8,7 @@ const NavLinks = ({ navbarLinks, mode, onLinkClick }) => {
           <Link
             to={link}
             onClick={onLinkClick} // ✅ Trigger callback to close mobile menu
-            className="text-gray-700 p-2 md:w-full btn btn-xs "  
-          >
+            className="text-gray-700 p-2 md:w-full btn btn-xs ">
             {linkTitle}
           </Link>
         </li>

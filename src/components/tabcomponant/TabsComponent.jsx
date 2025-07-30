@@ -3,13 +3,10 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { useEffect, useState } from "react";
 import { tabs as allTabs } from "../../utils/data/tabs.data";
+import DefaultContent from "./DefaultContent";
 
 const TabsComponent = () => {
-  const DefaultContent = () => (
-    <div className="text-center w-11/12 mx-auto mt-50 text-gray-500 text-lg  -center">
-      👋 Welcome! To my portfolio.
-    </div>
-  );
+  
 
    const location = useLocation();
   const navigate = useNavigate();
@@ -55,11 +52,11 @@ const TabsComponent = () => {
         <Tabs
           selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
           onSelect={handleSelect}>
-          <TabList className="border-none w-full cursor-pointer  -mt-1 bg-gray-200 flex space-x-1 ">
+          <TabList className="border-none w-full cursor-pointer  -mt-1 bg-gray-200 flex  ">
             {openTabs.map((tab, index) => (
               <Tab
                 key={index}
-                className="relative px-4 py-2  hover:bg-base-300 cor
+                className="relative px-4 py-2   hover:bg-base-300 cor
            rounded-t-md">
                 <div className="flex items-center gap-3">
                   {tab.tabTitle}
@@ -73,9 +70,9 @@ const TabsComponent = () => {
             ))}
           </TabList>
 
-          <div className="lg:h-[490px]  md:h-[280px]   md:overflow-y-scroll p-4">
+          <div className="lg:h-[490px]  md:h-[280px]   md:overflow-y-scroll ">
             {openTabs.map((tab, index) => (
-              <TabPanel className="ml-3" key={index}>
+              <TabPanel className="pl-2 mt-2" key={index}> 
                 {tab.tabContent}
               </TabPanel>
             ))}
