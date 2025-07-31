@@ -10,4 +10,8 @@ export const NavberLinks = [
       link: "/skill",
       linkTitle: "Skill",
     },
+    {
+      link: "/contact",
+      linkTitle: "Contact",
+    },
   ];

@@ -24,6 +24,10 @@ const DropdownComponent = () => {
       link: "/projects",
       title: "projects",
     },
+    {
+      link: "/contact",
+      title: "Contact",
+    },
    
   ];
 

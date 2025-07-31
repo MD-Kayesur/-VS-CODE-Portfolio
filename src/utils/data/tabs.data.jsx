@@ -1,4 +1,5 @@
 import About from "../../components/About/About";
+import Contact from "../../components/About/Contact";
 import Introduction from "../../components/About/Introduction";
 import Project from "../../components/About/Project";
 import Skill from "../../components/About/Skill";
@@ -27,5 +28,12 @@ export const tabs = [
        <Introduction></Introduction>
     ),
     path: "/introduction",
+  },
+  {
+    tabTitle: "Contact",
+    tabContent: (
+       <Contact></Contact>
+    ),
+    path: "/contact",
   },
 ];

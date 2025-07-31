@@ -9,6 +9,7 @@ import Skill from "../components/About/Skill";
 import TabsComponent from "../components/tabcomponant/TabsComponent";
 import Project from "../components/About/Project";
 import Introduction from "../components/About/Introduction";
+import Contact from "../components/About/Contact";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: "/projects",
         element: <Project></Project>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
       },
     ],
   },

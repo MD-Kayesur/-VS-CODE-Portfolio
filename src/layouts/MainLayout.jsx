@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navber from "../components/navbar/Navber";
 import Dashbors from "../components/dashbord/Dashbors";
+import Contact from "../components/About/Contact";
 
 const MainLayout = () => {
    
@@ -22,6 +23,7 @@ const MainLayout = () => {
         </div>
        
       </div>
+  
     </div>
   );
 };
