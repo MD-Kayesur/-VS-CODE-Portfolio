@@ -52,7 +52,7 @@ const Introduction = () => {
             </motion.h1>
           </div>
 
-          <p className="">
+          <p className="dark:text-white text-black">
             Front-End Developer crafting high-performance, responsive, and
             user-friendly web applications using modern technologies, clean
             code, and best practices for seamless user experiences.

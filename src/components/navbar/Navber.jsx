@@ -66,7 +66,7 @@ const Navber = () => {
             </Link>
           </div>
 
-           <ThemeToggle />
+           {/* <ThemeToggle /> */}
         </div>
 
         {isMobileMenuOpen && (
