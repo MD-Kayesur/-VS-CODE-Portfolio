@@ -25,7 +25,7 @@ const Introduction = () => {
   }, []);
 
   return (
-<div className="min-h-screen bg-[#0D1A43] flex items-center justify-center px-4 overflow-x-hidden">
+<div className="min-h-screen   flex items-center justify-center px-4 overflow-x-hidden">
       <div className="text-white   w-full flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Text Area */}
         <div className="space-y-4">
@@ -52,7 +52,7 @@ const Introduction = () => {
             </motion.h1>
           </div>
 
-          <p>
+          <p className="">
             Front-End Developer crafting high-performance, responsive, and
             user-friendly web applications using modern technologies, clean
             code, and best practices for seamless user experiences.
@@ -85,12 +85,12 @@ const Introduction = () => {
           </div>
         </div>
 
-        <div className="  flex items-center justify-center">
-          <div className="relative w-64 h-64 flex items-center justify-center">
+        <div className="  flex items-center justify-center ">
+          <div className="relative w-64 h-64 flex items-center justify-center  ">
              <motion.div
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
-              className="absolute w-full h-full rounded-full p-2 
+              className="absolute w-full h-full rounded-full p-2  
                      bg-[conic-gradient(from_0deg,green,red,blue,green)]">
                <div className="w-full h-full bg-black rounded-full"></div>
             </motion.div>
@@ -98,7 +98,7 @@ const Introduction = () => {
              <img
               src={profilePic}
               alt="Profile"
-              className="w-56 h-56 bg-cover rounded-full object-cover z-10 absolute"
+              className="w-60 bg-base-300 h-60 bg-cover rounded-full object-cover z-10 absolute"
             />
           </div>
         </div>

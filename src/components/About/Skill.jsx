@@ -1,4 +1,4 @@
- import React from "react";
+ 
 
 
 
@@ -21,6 +21,7 @@ export default function Skill() {
   I specialize in building full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). 
   I have hands-on experience with REST APIs, state management (Redux, Context API), authentication systems (JWT, Firebase), and deploying projects to platforms like Vercel and Render.
 </p>
+
          
       </div>
 
@@ -34,7 +35,10 @@ export default function Skill() {
               <div
                 className={`${skill.color} hover:${skill.color} h-3 rounded`}
                 style={{ width: `${skill.level}%` }}
-              ></div>
+              >
+
+                
+              </div>
             </div>
           </div>
         ))}

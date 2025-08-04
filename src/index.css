@@ -6,4 +6,7 @@
     /* background-color: black; */
     /* color: white; */
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
  

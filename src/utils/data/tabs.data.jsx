@@ -6,34 +6,28 @@ import Skill from "../../components/About/Skill";
 
 export const tabs = [
   {
-    tabTitle: "About",
+    tabTitle: "About.jsx",
     tabContent: <About />,
     path: "/about",
   },
   {
-    tabTitle: "Skill",
-    tabContent: <Skill></Skill>
-      
-    ,
+    tabTitle: "Skill.jsx",
+    tabContent: <Skill></Skill>,
     path: "/skill",
   },
   {
-    tabTitle: "Project",
+    tabTitle: "Project.jsx",
     tabContent: <Project></Project>,
     path: "/projects",
   },
   {
-    tabTitle: "Introduction",
-    tabContent: (
-       <Introduction></Introduction>
-    ),
+    tabTitle: "Introduction.jsx",
+    tabContent: <Introduction></Introduction>,
     path: "/introduction",
   },
   {
-    tabTitle: "Contact",
-    tabContent: (
-       <Contact></Contact>
-    ),
+    tabTitle: "Contact.jsx",
+    tabContent: <Contact></Contact>,
     path: "/contact",
   },
 ];

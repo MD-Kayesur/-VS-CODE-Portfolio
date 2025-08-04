@@ -59,7 +59,7 @@ const MouseBurst = () => {
     };
   }, []);
   //  প্রতিবার burst এ কতগুলো image ছড়িয়ে যাবে সেটি নির্ধারণ করা হয়েছে — এখানে ১০টি।
-  const particles = 4;
+  const particles = 1;
 
   return (
     <div className="fixed inset-0 z-[9999] pointer-events-none">

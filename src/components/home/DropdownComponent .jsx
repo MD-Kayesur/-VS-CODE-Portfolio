@@ -10,23 +10,23 @@ const DropdownComponent = () => {
   const navLinks = [
      {
       link: "/introduction",
-      title: "Introduction",
+      title: "Introduction.jsx",
     },
     {
       link: "/about",
-      title: "About",
+      title: "About.jsx",
     },
     {
       link: "/skill",
-      title: "Skill",
+      title: "Skill.jsx",
     },
     {
       link: "/projects",
-      title: "projects",
+      title: "projects.jsx",
     },
     {
       link: "/contact",
-      title: "Contact",
+      title: "Contact.jsx",
     },
    
   ];
@@ -51,7 +51,7 @@ const DropdownComponent = () => {
               <NavLink
                 to={navLink.link}
                 className={({ isActive }) =>
-                  `block w-full py-1 px-6 text-sm ${
+                  `block w-full py-1 px-6 text-sm  ${
                     isActive
                       ? "bg-blue-500 text-white"
                       : "hover:bg-gray-200 text-black"

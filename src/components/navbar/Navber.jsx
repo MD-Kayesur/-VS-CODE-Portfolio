@@ -7,6 +7,7 @@ import { RiLogoutCircleRLine } from "react-icons/ri";
 import { AiOutlineLogin } from "react-icons/ai";
 import NavLinks from "./NavLinks";
 import { NavberLinks } from "../../utils/data/NavberLinks";
+import ThemeToggle from "../../togglethem/ThemeToggle";
 
 const Navber = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navber = () => {
 
   return (
     <>
-      <div className="bg-gray-200 h-19 w-full">
+      <div className="  h-16 w-full fixed lg:static ">
         <div className="flex justify-between items-center px-4 py-2">
           {/* Left - Logo and Hamburger */}
           <div className="flex items-center gap-2">
@@ -49,22 +50,27 @@ const Navber = () => {
           </div>
 
           {/* Center - Desktop NavLinks */}
-          <div className="hidden -mt-2 lg:flex">
+          <div className="hidden -mt-2  ">
             <NavLinks navbarLinks={NavberLinks} mode="desktop" />
           </div>
 
+
+
           {/* Right - Login Button */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center -mt-2 gap-3">
             <Link
               onClick={handleCross}
-              className="btn btn-xs btn-primary btn-outline">
+              className="btn btn-xs btn-primary  btn-outline">
               <AiOutlineLogin className="rotate-90" />
+             
             </Link>
           </div>
+
+           <ThemeToggle />
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden px-4 pb-4">
+          <div className="lg:hidden  px-4 pb-4">
             <NavLinks
               navbarLinks={NavberLinks}
               mode="mobile"

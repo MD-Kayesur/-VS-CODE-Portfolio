@@ -3,14 +3,14 @@ import img from "../../assets/imgs/1749660883197-removebg-preview.png"
 const Contact = () => {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+      <footer className="footer sm:footer-horizontal   text-base-content px-10 py-20 lg:flex justify-between items-center  ">
         <aside>
           <img className="h-20 w-20" src={img} alt="" />
           
           <p>
-            ACME Industries Ltd.
+          MD.Kayesur Rahman
             <br />
-            Providing reliable tech since 1992
+           email : rmdkayesur@gmail.co
           </p>
         </aside>
         <nav>
