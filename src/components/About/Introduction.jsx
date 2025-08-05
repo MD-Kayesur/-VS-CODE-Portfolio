@@ -5,6 +5,7 @@ import { motion, easeInOut } from "framer-motion";
 import profilePic from "../../assets/imgs/1749660883197-removebg-preview.png"; // Replace with your actual image
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import Typed from "typed.js";
+import Font from "react-font";
 
 const Introduction = () => {
   const el = useRef(null); // reference to the span element
@@ -25,12 +26,12 @@ const Introduction = () => {
   }, []);
 
   return (
-<div className="min-h-screen   flex items-center justify-center px-4 overflow-x-hidden">
+<div className="min-h-screen  bg-blue-700 flex items-center justify-center px-4 overflow-x-hidden">
       <div className="text-white   w-full flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Text Area */}
         <div className="space-y-4">
           <div>
-            <h1 className="text-6xl md:text-5xl font-bold">
+             <h1 className="text-6xl md:text-5xl font-bold">
               <span className=" md:text-6xl text-5xl text-yellow-400">MD.</span>{" "}
               <br />
              </h1>
@@ -47,12 +48,15 @@ const Introduction = () => {
               <motion.span
                 animate={{ color: ["#FF5733", "#33FF3C", "#333CFF"] }}
                 transition={{ duration: 5, delay: 1, repeat: Infinity }}>
+                  <Font family="Agbalumo" weight={700}>
+                     
                 KAYESUR
+                  </Font>
               </motion.span>{" "}
             </motion.h1>
           </div>
 
-          <p className="dark:text-white text-black">
+          <p className="   ">
             Front-End Developer crafting high-performance, responsive, and
             user-friendly web applications using modern technologies, clean
             code, and best practices for seamless user experiences.
@@ -67,8 +71,14 @@ const Introduction = () => {
               className="">
                <button className="btn btn-info"> Download CV</button>
             </a>
+            <a
+              href="../../public/MDkayesurResume.pdf"
+              download="My_Resume.pdf"
+              className="">
+               <button className="btn btn-info"> Cover Later</button>
+            </a>
 
-            <a className="text-3xl" href="https://x.com/Md_Kayesur">
+            {/* <a className="text-3xl" href="https://x.com/Md_Kayesur">
               {" "}
               <FaXTwitter></FaXTwitter>{" "}
             </a>
@@ -81,7 +91,7 @@ const Introduction = () => {
             <a className="text-3xl" href="https://github.com/MD-Kayesur">
               {" "}
               <FaGithub></FaGithub>{" "}
-            </a>
+            </a> */}
           </div>
         </div>
 

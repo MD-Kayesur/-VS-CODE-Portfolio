@@ -3,7 +3,20 @@ import myImage from "../../assets/imgs/1749660883197-removebg-preview.png"; // Y
 import ThemeToggle from "../../togglethem/ThemeToggle";
   const About = () => {
   return (
-    <div     className="min-h-screen  text-white py-16 px-6 md:px-20 relative overflow-hidden">
+
+
+<div className="flex">
+  {/* Line numbers column */}
+  <div className="text-right pr-4 text-gray-400 font-mono select-none">
+    {Array.from({ length: 20 }, (_, i) => (
+      <div key={i} className="h-6">{i + 1}</div>
+    ))}
+  </div>
+
+ <div className="flex-1">
+
+
+    <div     className="min-h-screen   py-16 px-6 md:px-20 relative overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Left Image Section */}
         <div className="relative">
@@ -34,7 +47,7 @@ import ThemeToggle from "../../togglethem/ThemeToggle";
           </div>
         <div className="text-left z-10">
           <h2 className="text-4xl font-bold mb-6 animated-gradient ">About Me</h2>
-          <p className="text-white mt-3 leading-relaxed">
+          <p className="  mt-3 leading-relaxed">
     Currently looking for a position in the <span className="font-bold text-yellow-400">IT industry</span> where I can apply my knowledge, learn from real-world experience, and grow as a developer. I'm also continuously learning modern frameworks and tools like 
     <span className="font-medium"> React.js, Next.js, Firebase, Git, MongoDB, Express.js, Node.js etc</span>.
   </p>
@@ -43,6 +56,8 @@ import ThemeToggle from "../../togglethem/ThemeToggle";
         </div>
       </div>
     </div>
+     </div>
+</div>
   );
 };
 
