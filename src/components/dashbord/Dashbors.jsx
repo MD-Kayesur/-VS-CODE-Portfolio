@@ -9,7 +9,7 @@ const Dashbors = ( ) => {
  
   return (
     <>
-      <div className="overflow-hidden hidden md:block ">
+      <div className="overflow-hidden min-h-fit hidden md:block ">
         <div className="   flex   ">
           <div className=" flex ">
             <Navlinks />

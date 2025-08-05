@@ -1,55 +1,116 @@
- import Marquee from "react-fast-marquee";
-import { FaJs } from "react-icons/fa";
+import Marquee from "react-fast-marquee";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaJs,
+  FaReact,
+} from "react-icons/fa";
 
-
-
+import {
+  SiTailwindcss,
+  SiChakraui,
+  SiNextdotjs,
+} from "react-icons/si";
+import {
+  FaNodeJs,
+} from "react-icons/fa";
+import {
+  SiExpress,
+  SiMongodb,
+  SiMongoose,
+  SiFirebase,
+  SiDatabricks,
+  SiJsonwebtokens,
+  SiPrisma,
+} from "react-icons/si";
 export default function Skill() {
-     const skills = [
-  { name: "Html", level: 90, color: "bg-green-500" },
-  { name: "Css", level: 85, color: "bg-yellow-400" },
-  { name: "JS", level: 70, color: "bg-cyan-400" },
-  { name: "React", level: 75, color: "bg-red-500" },
-  { name: "Next.Js", level: 60, color: "bg-indigo-500" },
-  { name: "Node.js", level: 40, color: "bg-orange-500" },
-  { name: "Express.js", level: 70, color: "bg-violet-500" },
-  { name: "MongoDB", level: 50, color: "bg-fuchsia-500" },
+ const skills = [
+  { title: "HTML", icon: <FaHtml5 /> },
+  { title: "CSS", icon: <FaCss3Alt /> },
+  { title: "Bootstrap", icon: <FaBootstrap /> },
+  { title: "Tailwind CSS", icon: <SiTailwindcss /> },
+  { title: "Chakra UI", icon: <SiChakraui /> },
+  { title: "JavaScript", icon: <FaJs /> },
+  { title: "React", icon: <FaReact /> },
+  { title: "Next.js", icon: <SiNextdotjs /> },
+];
+
+const backendSkills = [
+  { title: "Node.js", icon: <FaNodeJs /> },
+  { title: "Express.js", icon: <SiExpress /> },
+  { title: "MongoDB", icon: <SiMongodb /> },
+  { title: "Mongoose", icon: <SiMongoose /> },
+  { title: "NoSQL", icon: <SiDatabricks /> }, // NoSQL এর জন্য generic icon
+  { title: "Firebase", icon: <SiFirebase /> }, // optional auth/backend service
+  { title: "JWT", icon: <SiJsonwebtokens /> }, // for authentication
+  { title: "Prisma", icon: <SiPrisma /> }, // ORM alternative to Mongoose
 ];
   return (
-    <div className="min-h-screen bg-[#1a1d52] text-white px-8 py-12   items-center   gap-8">
+    <div className="min-h-fit bg-[#1a1d52] text-white px-8 py-12  flex flex-col justify-between items-center   gap-8">
       <div className="md:w-11/12 mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4 animated-gradient ">Skills</h2>
+        <h2 className="text-4xl font-bold mb-4 animated-gradient ">Front end</h2>
         <p className="text-sm mb-4">
-  I specialize in building full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). 
-  I have hands-on experience with REST APIs, state management (Redux, Context API), authentication systems (JWT, Firebase), and deploying projects to platforms like Vercel and Render.
-</p>
+          I specialize in building full-stack web applications using the MERN
+          stack (MongoDB, Express.js, React.js, Node.js). I have hands-on
+          experience with REST APIs, state management (Redux, Context API),
+          authentication systems (JWT, Firebase), and deploying projects to
+          platforms like Vercel and Render.
+        </p>
 
-         
-      </div>
-    
-      <Marquee
-        direction="right"
-        speed={  50}
+        <Marquee
+        speed={40}
+        pauseOnHover={true}
         gradient={false}
-        pauseOnHover  // খুবই গুরুত্বপূর্ণ: যাতে scroll বন্ধ না হয়
+        direction="left"
+        className="overflow-hidden"
       >
-        <div className="flex gap-24 justify-between">
-          {skills.map((skill, index) => (
-            <div key={index} className="text-center">
-              <FaJs className="text-3xl mb-1" />
-              <div className="font-medium">{skill.name}</div>
-            </div>
-          ))}
-        </div>
-      </Marquee>
+      <div className="flex justify-center flex-wrap gap-x-15 gap-y-6">
+  {skills.map((skill, index) => (
+    <div
+      key={index}
+      className="flex flex-col items-center hover:scale-110 justify-center w-24"
+    >
+      <div className="text-4xl mb-2">{skill.icon}</div>
+      <p className="text-sm text-center">{skill.title}</p>
     </div>
-  
+  ))}
+</div>
 
 
+      </Marquee>
+      </div>
+      <div className="md:w-11/12 mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-4 animated-gradient ">Back end</h2>
+        <p className="text-sm mb-4">
+          I specialize in building full-stack web applications using the MERN
+          stack (MongoDB, Express.js, React.js, Node.js). I have hands-on
+          experience with REST APIs, state management (Redux, Context API),
+          authentication systems (JWT, Firebase), and deploying projects to
+          platforms like Vercel and Render.
+        </p>
 
-  
- 
+        <Marquee
+        speed={40}
+        pauseOnHover={true}
+        gradient={false}
+        direction="right"
+        className="overflow-hidden"
+      >
+      <div className="flex justify-center flex-wrap gap-x-14 gap-y-6">
+  {backendSkills.map((skill, index) => (
+    <div
+      key={index}
+      className="flex flex-col items-center hover:scale-110 justify-center w-24"
+    >
+      <div className="text-4xl mb-2">{skill.icon}</div>
+      <p className="text-sm text-center">{skill.title}</p>
+    </div>
+  ))}
+</div>
 
-
-     
+      </Marquee>
+      </div>
+    </div>
   );
 }

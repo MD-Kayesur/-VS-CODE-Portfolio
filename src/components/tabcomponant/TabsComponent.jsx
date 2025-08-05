@@ -52,7 +52,7 @@ const TabsComponent = () => {
         <Tabs
           selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
           onSelect={handleSelect}>
-          <TabList className="border-none w-full cursor-pointer  -mt-1   flex  ">
+          <TabList className="border-none w-full cursor-pointer  -mt-1   bg-red-200 flex  ">
             {openTabs.map((tab, index) => (
               <Tab
                 key={index}
