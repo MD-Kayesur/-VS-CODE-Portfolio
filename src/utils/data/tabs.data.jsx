@@ -1,4 +1,5 @@
 import About from "../../components/About/About";
+import Card from "../../components/About/Card";
 import Contact from "../../components/About/Contact";
 import Introduction from "../../components/About/Introduction";
 import Project from "../../components/About/Project";
@@ -29,5 +30,10 @@ export const tabs = [
     tabTitle: "Contact.jsx",
     tabContent: <Contact></Contact>,
     path: "/contact",
+  },
+  {
+    tabTitle: "Card.jsx",
+    tabContent: <Card></Card>,
+    path: "/card",
   },
 ];

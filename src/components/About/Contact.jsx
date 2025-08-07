@@ -10,33 +10,50 @@ import {
 import React from "react";
 import Swal from "sweetalert2";
 import CodeWrapper from "../CodeWrapper";
+import Font from "react-font";
 
 export default function Contact() {
   const lines = [
-    "/*",
-    " * Contact Information:",
-    " * Phone: +880 19263-60430",
+    "/**",
     " * WhatsApp: +880 19263-60430",
-    " * GitHub: github.com/KareemEhab",
-    " * LinkedIn: linkedin.com/in/kareem-hamouda",
-    " * Facebook: facebook.com/kareem.ehab.37",
-    " * Instagram: instagram.com/kareem.ehabz",
+    " * GitHub: https://github.com/MD-Kayesur",
+    " * LinkedIn: https://www.linkedin.com/in/md-kayesur-rahman-212759317",
+    " * Facebook: https://www.facebook.com/md.kayesur.5",
+    " * Instagram: https://www.instagram.com/crazy_boy_kayes",
     "*/",
   ];
 
   const getIcon = (line) => {
-    if (line.includes("Phone"))
-      return <FaPhone className="inline mr-2 text-yellow-400" />;
     if (line.includes("WhatsApp"))
-      return <FaWhatsapp className="inline mr-2 text-green-500" />;
+      return (
+        <a href="https://www.whatsapp.com/download/">
+          <FaWhatsapp className="inline mr-2 text-5xl text-green-500" />
+        </a>
+      );
     if (line.includes("GitHub"))
-      return <FaGithub className="inline mr-2   text-white" />;
+      return (
+        <a href="https://github.com/MD-Kayesur">
+          <FaGithub className="inline mr-2  text-5xl text-white" />
+        </a>
+      );
     if (line.includes("LinkedIn"))
-      return <FaLinkedin className="inline mr-2 text-blue-400" />;
+      return (
+        <a href="https://www.linkedin.com/in/md-kayesur-rahman-212759317">
+          <FaLinkedin className="inline text-5xl mr-2 text-blue-400" />
+        </a>
+      );
     if (line.includes("Facebook"))
-      return <FaFacebook className="inline mr-2 text-blue-600" />;
+      return (
+        <a href="https://www.facebook.com/md.kayesur.5">
+          <FaFacebook className="inline text-5xl mr-2 text-blue-600" />
+        </a>
+      );
     if (line.includes("Instagram"))
-      return <FaInstagram className="inline mr-2 text-pink-400" />;
+      return (
+        <a href="https://www.instagram.com/crazy_boy_kayes">
+          <FaInstagram className="inline text-5xl mr-2 text-pink-400" />
+        </a>
+      );
     return null;
   };
 
@@ -48,22 +65,31 @@ export default function Contact() {
     console.log(email);
     return Swal.fire({
       title: "Good job!",
-      text: "Thank You so much",
+      text: "Thank You so much for massager me ",
       icon: "success",
     });
   };
 
   return (
     <div>
-      <CodeWrapper lines={30}>
-        <div className=" min-h-screen bg-gray-900 text-white font-mono p-6 rounded-md w-full max-w-full mx-auto">
+      <CodeWrapper lines={36}>
+        <div className=" min-h-screen   bg-[#1a1d52] pt-20 pl-6 text-white font-mono  rounded-md     ">
+          <div className="flex justify-center items-center text-5xl font-bold">
+            <Font family="Agbalumo ">
+              <h1 font-Agbalumo className="space-x-2 text-green-400 ">
+                {" "}
+                <span>/****** </span> Contact with me <span> ******/</span>{" "}
+              </h1>
+            </Font>
+          </div>
+
           <div className="   rounded-md font-mono text-sm">
             {lines.map((line, index) => (
-              <div key={index} className="flex">
+              <div key={index} className="  gap-4 ">
                 <span className="text-green-400  ">
                   {line.includes(":") ? (
                     <>
-                      <div className="text-xl mt-1 flex items-center">
+                      <div className="text-xl  mt-5 flex items-center">
                         {" * "}
                         {getIcon(line)}
                         {line.split(":")[0].trim()}:{" "}
@@ -80,11 +106,10 @@ export default function Contact() {
 
           <div className="  mx-auto mt-15">
             <span className="text-cyan-400">
-              <span className="text-blue-400">const</span> handleContact =() =
-              {">"} [ <br />
-            
+              <span className="text-blue-400">const</span> handleContact = [{" "}
+              <br />
               <form className="ml-4" action="" onSubmit={handleSubmit}>
-                 <span> {"{"}</span>
+                <span> {"{"}</span>
                 <div className="flex">
                   <span>
                     <span className="text-blue-400">const</span>{" "}
@@ -120,7 +145,7 @@ export default function Contact() {
                     <span className="text-cyan-400"> Number</span> = "
                     <input
                       type="text"
-                      placeholder=" +880 number"
+                      placeholder="Contact number"
                       className="bg-transparent border-none pl-3 focus:outline-none text-white"
                     />
                     "
@@ -128,8 +153,6 @@ export default function Contact() {
                 </div>
                 {"}"} , <br />
                 {"{"}
-
-
                 <div className="flex items-start">
                   <span className="flex gap-3 items-start">
                     <span className="text-blue-400 flex items-center">
@@ -142,7 +165,7 @@ export default function Contact() {
                     </span>
                     <br />
                     <textarea
-                      rows={2}
+                      rows={6}
                       placeholder="Your message here..."
                       name="massage"
                       cols={30}

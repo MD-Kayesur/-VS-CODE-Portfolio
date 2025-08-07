@@ -1,12 +1,10 @@
-import React from "react";
 import myImage from "../../assets/imgs/1749660883197-removebg-preview.png"; // Your image path
-import ThemeToggle from "../../togglethem/ThemeToggle";
-import CodeWrapper from "../CodeWrapper";
+
 const About = () => {
   return (
-    <div>
-      <CodeWrapper lines={20}>
-        <div className="flex">
+    
+      <div>
+        <div className="flex bg-[#1a1d52] text-white">
           <div className="flex-1">
             <div className="min-h-screen   py-16 px-6 md:px-20 relative overflow-hidden">
               <div className="  mx-auto flex flex-col md:flex-row items-center gap-12">
@@ -39,9 +37,7 @@ const About = () => {
                     <div>
                       {" "}
                       <h2 className="text-3xl font-bold">Location</h2>
-                      <h2 className="text-xl ">
-                        Dhaka City ,Bangladesh
-                      </h2>
+                      <h2 className="text-xl ">Dhaka City ,Bangladesh</h2>
                     </div>
                   </div>
                   <div className="text-left z-10">
@@ -69,8 +65,9 @@ const About = () => {
             </div>
           </div>
         </div>
-      </CodeWrapper>
-    </div>
+      </div>
+
+      
   );
 };
 

@@ -10,6 +10,7 @@ import TabsComponent from "../components/tabcomponant/TabsComponent";
 import Project from "../components/About/Project";
 import Introduction from "../components/About/Introduction";
 import Contact from "../components/About/Contact";
+import Card from "../components/About/Card";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/card",
+        element: <Card></Card>,
       },
     ],
   },

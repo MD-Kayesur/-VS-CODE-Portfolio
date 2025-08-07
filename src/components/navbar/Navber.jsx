@@ -20,7 +20,7 @@ const Navber = () => {
 
   return (
     <>
-      <div className=" bg-gray-100 h-16 w-full fixed lg:static ">
+      <div className=" bg-gray-100 h-16 z-10 w-full fixed lg:static ">
         <div className="flex justify-between items-center px-4 py-2">
           {/* Left - Logo and Hamburger */}
           <div className="flex items-center gap-2">

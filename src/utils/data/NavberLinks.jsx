@@ -3,6 +3,10 @@
 
 export const NavberLinks = [
     {
+      link: "/introduction",
+      linkTitle: "Introduction",
+    },
+    {
       link: "/about",
       linkTitle: "About",
     },
@@ -13,5 +17,9 @@ export const NavberLinks = [
     {
       link: "/contact",
       linkTitle: "Contact",
+    },
+    {
+      link: "/card",
+      linkTitle: "Card",
     },
   ];

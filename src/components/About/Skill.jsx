@@ -45,7 +45,7 @@ export default function Skill() {
   ];
   return (
     <div>
-      <CodeWrapper lines={20}>
+      <CodeWrapper lines={22}>
         <div className="min-h-fit bg-[#1a1d52] text-white px-8 py-12  flex flex-col justify-between items-center   gap-8">
           <div className="md:w-11/12 mx-auto text-center">
             <h2 className="text-4xl font-bold mb-4 animated-gradient ">

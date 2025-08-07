@@ -72,7 +72,7 @@ const TabsComponent = () => {
 
           <div className="lg:h-[490px]  md:h-[280px]   md:overflow-y-scroll ">
             {openTabs.map((tab, index) => (
-              <TabPanel className="pl-2 mt-2" key={index}> 
+              <TabPanel className="pl-2 mt-2 " key={index}> 
                 {tab.tabContent}
               </TabPanel>
             ))}

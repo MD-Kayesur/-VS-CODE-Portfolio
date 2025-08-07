@@ -28,6 +28,10 @@ const DropdownComponent = () => {
       link: "/contact",
       title: "Contact.jsx",
     },
+    {
+      link: "/card",
+      title: "Card.jsx",
+    },
    
   ];
 

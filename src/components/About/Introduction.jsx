@@ -27,10 +27,8 @@ const Introduction = () => {
   }, []);
 
   return (
-
     <div>
-    <CodeWrapper lines={26}>
-      <div className="min-h-screen  bg-blue-700 flex items-center justify-center px-4 overflow-x-hidden">
+      <div className="min-h-screen  bg-[#1a1d52] flex items-center justify-center px-4 overflow-x-hidden">
         <div className="text-white   w-full flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Text Area */}
           <div className="space-y-4">
@@ -54,8 +52,10 @@ const Introduction = () => {
                 <motion.span
                   animate={{ color: ["#FF5733", "#33FF3C", "#333CFF"] }}
                   transition={{ duration: 5, delay: 1, repeat: Infinity }}>
-                  <Font family="Agbalumo" weight={700}>
-                    KAYESUR
+                  <Font family="Agbalumo">
+                    <h2 className="text-7xl font-bold mb-4 animated-gradient ">
+                      KAYESUR
+                    </h2>
                   </Font>
                 </motion.span>{" "}
               </motion.h1>
@@ -77,7 +77,7 @@ const Introduction = () => {
                 <button className="btn btn-info"> Download CV</button>
               </a>
               <a
-                href="../../public/MDkayesurResume.pdf"
+                href="../../../public/MDkayesurResume & CV.pdf"
                 download="My_Resume.pdf"
                 className="">
                 <button className="btn btn-info"> Cover Later</button>
@@ -119,7 +119,6 @@ const Introduction = () => {
           </div>
         </div>
       </div>
-    </CodeWrapper>
     </div>
   );
 };
