@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navber from "../components/navbar/Navber";
 import Dashbors from "../components/dashbord/Dashbors";
-import Contact from "../components/About/Contact";
+import Contact from "../components/contact/Contact";
 
 const MainLayout = () => {
    

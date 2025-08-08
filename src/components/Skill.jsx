@@ -20,7 +20,7 @@ import {
   SiJsonwebtokens,
   SiPrisma,
 } from "react-icons/si";
-import CodeWrapper from "../CodeWrapper";
+import CodeWrapper from "./CodeWrapper";
 export default function Skill() {
   const skills = [
     { title: "HTML", icon: <FaHtml5 /> },

@@ -4,7 +4,7 @@ import DropdownComponent from './DropdownComponent ';
 const Home = () => {
     return (
         <div>
-             homedfsdfsd
+     👋 Welcome! To my portfolio
         </div>
     );
 };

@@ -2,11 +2,11 @@
 
 import React, { useEffect, useRef } from "react";
 import { motion, easeInOut } from "framer-motion";
-import profilePic from "../../assets/imgs/1749660883197-removebg-preview.png"; // Replace with your actual image
+import profilePic from "../assets/imgs/1749660883197-removebg-preview.png"; // Replace with your actual image
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import Typed from "typed.js";
 import Font from "react-font";
-import CodeWrapper from "../CodeWrapper";
+import CodeWrapper from "./CodeWrapper";
 
 const Introduction = () => {
   const el = useRef(null); // reference to the span element

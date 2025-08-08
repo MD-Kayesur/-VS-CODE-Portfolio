@@ -1,4 +1,4 @@
-import CodeWrapper from "../CodeWrapper";
+import CodeWrapper from "./CodeWrapper";
 
  
 const projects = [

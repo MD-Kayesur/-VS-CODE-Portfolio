@@ -5,12 +5,12 @@ import Home from "../components/home/Home";
 import Dashbors from "../components/dashbord/Dashbors";
 import Tabss from "../components/tabcomponant/TabsComponent";
 import About from "../components/About/About";
-import Skill from "../components/About/Skill";
+import Skill from "../components/Skill";
 import TabsComponent from "../components/tabcomponant/TabsComponent";
-import Project from "../components/About/Project";
-import Introduction from "../components/About/Introduction";
-import Contact from "../components/About/Contact";
-import Card from "../components/About/Card";
+import Project from "../components/Project";
+import Introduction from "../components/Introduction";
+import Contact from "../components/contact/Contact";
+import Card from "../components/Card";
 export const router = createBrowserRouter([
   {
     path: "/",

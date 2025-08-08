@@ -1,0 +1,24 @@
+.animated-border {
+  border-radius: 12px;
+  padding: 4px; /* Border thickness */
+  background: linear-gradient(270deg, #ff0000, #00ff00, #0000ff, #ff0000);
+  background-size: 800% 800%;
+  animation: rgbRotate 10s linear infinite;
+  position: relative;
+
+  /* Glow on all sides matching the gradient */
+}
+
+@keyframes rgbRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+ 

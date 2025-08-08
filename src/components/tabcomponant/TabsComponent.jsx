@@ -47,7 +47,7 @@ const TabsComponent = () => {
     }
   };
   return (
-    <div className="w-11/12 mx-auto  h-[calc(100vh-100px)]  hidden md:block md:h-[calc(100vh-80px)]  -ml-px">
+    <div className="w-11/12 mx-auto  h-[calc(100vh-100px)]    md:block md:h-[calc(100vh-80px)]  -ml-px">
       {openTabs.length > 0 ? (
         <Tabs
           selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}

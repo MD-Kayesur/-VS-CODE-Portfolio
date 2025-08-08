@@ -1,61 +1,14 @@
-import {
-  FaPhone,
-  FaWhatsapp,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-  FaInstagram,
-} from "react-icons/fa";
 
 import React from "react";
 import Swal from "sweetalert2";
 import CodeWrapper from "../CodeWrapper";
 import Font from "react-font";
+import { Contacts } from "./Contact.Data";
 
 export default function Contact() {
-  const lines = [
-    "/**",
-    " * WhatsApp: +880 19263-60430",
-    " * GitHub: https://github.com/MD-Kayesur",
-    " * LinkedIn: https://www.linkedin.com/in/md-kayesur-rahman-212759317",
-    " * Facebook: https://www.facebook.com/md.kayesur.5",
-    " * Instagram: https://www.instagram.com/crazy_boy_kayes",
-    "*/",
-  ];
+   
+ 
 
-  const getIcon = (line) => {
-    if (line.includes("WhatsApp"))
-      return (
-        <a href="https://www.whatsapp.com/download/">
-          <FaWhatsapp className="inline mr-2 text-5xl text-green-500" />
-        </a>
-      );
-    if (line.includes("GitHub"))
-      return (
-        <a href="https://github.com/MD-Kayesur">
-          <FaGithub className="inline mr-2  text-5xl text-white" />
-        </a>
-      );
-    if (line.includes("LinkedIn"))
-      return (
-        <a href="https://www.linkedin.com/in/md-kayesur-rahman-212759317">
-          <FaLinkedin className="inline text-5xl mr-2 text-blue-400" />
-        </a>
-      );
-    if (line.includes("Facebook"))
-      return (
-        <a href="https://www.facebook.com/md.kayesur.5">
-          <FaFacebook className="inline text-5xl mr-2 text-blue-600" />
-        </a>
-      );
-    if (line.includes("Instagram"))
-      return (
-        <a href="https://www.instagram.com/crazy_boy_kayes">
-          <FaInstagram className="inline text-5xl mr-2 text-pink-400" />
-        </a>
-      );
-    return null;
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -72,36 +25,38 @@ export default function Contact() {
 
   return (
     <div>
-      <CodeWrapper lines={36}>
-        <div className=" min-h-screen   bg-[#1a1d52] pt-20 pl-6 text-white font-mono  rounded-md     ">
-          <div className="flex justify-center items-center text-5xl font-bold">
+      <CodeWrapper lines={44}>
+        <div className=" min-h-screen   bg-[#1a1d52] pt-20 pl-4  text-white font-mono  rounded-md     ">
+          <div className="flex justify-center items-center text-2xl md:text-5xl font-bold">
             <Font family="Agbalumo ">
-              <h1 font-Agbalumo className="space-x-2 text-green-400 ">
+              <h1 font-Agbalumo className="  text-green-400 ">
                 {" "}
                 <span>/****** </span> Contact with me <span> ******/</span>{" "}
               </h1>
             </Font>
           </div>
 
-          <div className="   rounded-md font-mono text-sm">
-            {lines.map((line, index) => (
-              <div key={index} className="  gap-4 ">
-                <span className="text-green-400  ">
-                  {line.includes(":") ? (
-                    <>
-                      <div className="text-xl  mt-5 flex items-center">
-                        {" * "}
-                        {getIcon(line)}
-                        {line.split(":")[0].trim()}:{" "}
-                        {line.split(":").slice(1).join(":").trim()}
-                      </div>
-                    </>
-                  ) : (
-                    line
-                  )}
-                </span>
-              </div>
-            ))}
+          <div className=" mt-10  rounded-md font-mono text-sm">
+          
+ <div  className="text-green-500">{`/**`}</div>
+{Contacts.map((contact, index) => (
+  
+        <div key={index} className="flex md:text-xl items-center space-x-2 mt-5 ml-2">
+          
+          <span className="text-green-500">{`*`}</span>
+          {contact.icon}
+          <a
+            href={contact.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="  text-green-400"
+          >
+            {contact.label}: {contact.value}
+          </a>
+        </div>
+      ))}
+      <div  className="text-green-500">{`*/`}</div>
+
           </div>
 
           <div className="  mx-auto mt-15">
@@ -132,7 +87,7 @@ export default function Contact() {
                       // type="email"
                       name="email"
                       placeholder="example@gmail.com "
-                      className="bg-transparent border-none pl-3 focus:outline-none text-white"
+                      className="bg-transparent border-none pl-3 lg:pl-3 focus:outline-none text-white"
                     />
                     "
                   </span>
@@ -140,13 +95,13 @@ export default function Contact() {
                 {"}"} , <br />
                 {"{"}
                 <div className="flex">
-                  <span>
-                    <span className="text-blue-400">const</span>{" "}
+                  <span className="  ">
+                    <span className="text-blue-400">const</span> 
                     <span className="text-cyan-400"> Number</span> = "
                     <input
                       type="text"
-                      placeholder="Contact number"
-                      className="bg-transparent border-none pl-3 focus:outline-none text-white"
+                      placeholder="Your number"
+                      className="bg-transparent border-none  pl-2   focus:outline-none text-white"
                     />
                     "
                   </span>
@@ -157,7 +112,7 @@ export default function Contact() {
                   <span className="flex gap-3 items-start">
                     <span className="text-blue-400 flex items-center">
                       const
-                    </span>{" "}
+                    </span> 
                     <span className="flex items-center gap-1">
                       <span className="text-cyan-400">message</span>
                       <span>=</span>

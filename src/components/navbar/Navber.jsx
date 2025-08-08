@@ -16,14 +16,12 @@ const Navber = () => {
     alert("nothing will happen");
   };
 
- 
-
   return (
     <>
-      <div className=" bg-gray-100 h-16 z-10 w-full fixed lg:static ">
+      <div className=" bg-[#1a1d52]   h-16 z-100 w-full fixed lg:static ">
         <div className="flex justify-between items-center px-4 py-2">
           {/* Left - Logo and Hamburger */}
-          <div className="flex items-center gap-2">
+          <div className="flex   items-center gap-2">
             {/* Hamburger Button */}
             <div className="lg:hidden">
               <button
@@ -31,7 +29,7 @@ const Navber = () => {
                 className="btn btn-ghost btn-sm">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-6 w-6 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor">
@@ -46,36 +44,37 @@ const Navber = () => {
             </div>
 
             {/* Logo */}
-            <img className="w-14 md:w-20 -mt-2" src={img} alt="logo" />
+            {/* <img className="w-14 md:w-20  " src={img} alt="logo" /> */}
           </div>
 
           {/* Center - Desktop NavLinks */}
-          <div className="hidden -mt-2  ">
+          {/* <div className="  hidden   ">
             <NavLinks navbarLinks={NavberLinks} mode="desktop" />
-          </div>
-
-
+          </div> */}
 
           {/* Right - Login Button */}
-          <div className="flex items-center -mt-2 gap-3">
+          <div className="flex items-center  gap-3">
             <Link
               onClick={handleCross}
               className="btn btn-xs btn-primary  btn-outline">
               <AiOutlineLogin className="rotate-90" />
-             
             </Link>
           </div>
 
-           {/* <ThemeToggle /> */}
+          {/* <ThemeToggle /> */}
         </div>
+ 
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden  px-4 pb-4">
-            <NavLinks
-              navbarLinks={NavberLinks}
-              mode="mobile"
-              onLinkClick={() => setIsMobileMenuOpen(false)} // ✅ Close menu on click
-            />
+          <div className="  lg:hidden pt-4  pb-4">
+             
+              <NavLinks
+            
+                navbarLinks={NavberLinks} 
+                mode="mobile" 
+                onLinkClick={() => setIsMobileMenuOpen(false)} // ✅ Close menu on click
+              />;
+          
           </div>
         )}
       </div>

@@ -1,9 +1,9 @@
 import About from "../../components/About/About";
-import Card from "../../components/About/Card";
-import Contact from "../../components/About/Contact";
-import Introduction from "../../components/About/Introduction";
-import Project from "../../components/About/Project";
-import Skill from "../../components/About/Skill";
+import Card from "../../components/Card";
+import Contact from "../../components/contact/Contact";
+import Introduction from "../../components/Introduction";
+import Project from "../../components/Project";
+import Skill from "../../components/Skill";
 
 export const tabs = [
   {

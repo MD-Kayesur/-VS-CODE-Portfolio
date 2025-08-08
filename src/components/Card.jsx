@@ -1,5 +1,5 @@
 import React from 'react';
-import myCard from "../../assets/imgs/image.png"
+import myCard from "../assets/imgs/image.png"
 const Card = () => {
     return (
         <div>
