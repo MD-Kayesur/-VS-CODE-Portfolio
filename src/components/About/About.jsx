@@ -2,13 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { AboutData } from "./AboutData";
 import "./AnimatedBorder.css";
+import CodeWrapper from "../CodeWrapper";
 const About = () => {
   return (
-    <div className=" grid lg:grid-cols-2  gap-6  p-10  bg-[#1a1d52]  pt-27 lg:pt-0    justify-center ">
+<CodeWrapper lines={50}>
+    <div className="   p-10  bg-[#1a1d52]  pt-27 lg:pt-0      ">
+<div className="  mt-10  flex justify-center "> <h1 className="text-5xl font-bold  text-white">About me</h1></div>
 
-<div className="    flex justify-center "> <h1 className="text-5xl font-bold  text-white">About me</h1></div>
-
-      {AboutData.map((data, index) => (
+      <div className="grid lg:grid-cols-3 mt-10 gap-6">
+        {AboutData.map((data, index) => (
         
         <motion.div
           key={index}
@@ -28,7 +30,9 @@ const About = () => {
           </div>
         </motion.div>
       ))}
+      </div>
     </div>
+      </CodeWrapper>
   );
 };
 

@@ -47,7 +47,7 @@ const TabsComponent = () => {
     }
   };
   return (
-    <div className="w-11/12 mx-auto  h-[calc(100vh-100px)]    md:block md:h-[calc(100vh-80px)]  -ml-px">
+    <div className="w-11/12 mx-auto overflow-auto md:overflow-hidden h-[calc(100vh-100px)]  md:h-[calc(100vh-100px)]   md:block   -ml-px">
       {openTabs.length > 0 ? (
         <Tabs
           selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
@@ -59,6 +59,7 @@ const TabsComponent = () => {
                 className="relative px-4 py-2   hover:bg-base-300 cor
            rounded-t-md">
                 <div className="flex items-center gap-3">
+                  <span className="text-blue-500">{tab.icon}</span>
                   {tab.tabTitle}
                   <button
                     onClick={(e) => handleClose(e, index)}
@@ -70,9 +71,9 @@ const TabsComponent = () => {
             ))}
           </TabList>
 
-          <div className="lg:h-[490px]  md:h-[280px]   md:overflow-y-scroll ">
+          <div className="h-[calc(100vh-100px)]  md:h-[calc(100vh-100px)]    md:overflow-y-scroll ">
             {openTabs.map((tab, index) => (
-              <TabPanel className="pl-2 mt-2 " key={index}> 
+              <TabPanel className="pl-2 mt-2  " key={index}> 
                 {tab.tabContent}
               </TabPanel>
             ))}

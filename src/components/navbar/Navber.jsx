@@ -1,28 +1,36 @@
-import { useState } from "react";
-import { GiCrossedSabres } from "react-icons/gi";
+import { useState, useRef, useEffect } from "react";
 import img from "../../assets/imgs/1749660883197-removebg-preview.png";
-import { Link } from "react-router-dom";
-
-import { RiLogoutCircleRLine } from "react-icons/ri";
-import { AiOutlineLogin } from "react-icons/ai";
-import NavLinks from "./NavLinks";
-import { NavberLinks } from "../../utils/data/NavberLinks";
-import ThemeToggle from "../../togglethem/ThemeToggle";
+import DropdownComponent from "../home/DropdownComponent ";
 
 const Navber = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
-  const handleCross = () => {
-    alert("nothing will happen");
-  };
+  // Detect click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <>
-      <div className=" bg-[#1a1d52]   h-16 z-100 w-full fixed lg:static ">
-        <div className="flex justify-between items-center px-4 py-2">
+      <div className="bg-[#1a1d52] h-16 z-100 w-full fixed lg:static">
+        <div className="flex justify-between items-center   px-4 py-2">
           {/* Left - Logo and Hamburger */}
-          <div className="flex   items-center gap-2">
-            {/* Hamburger Button */}
+          <div className="flex items-center gap-2">
             <div className="lg:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -42,39 +50,26 @@ const Navber = () => {
                 </svg>
               </button>
             </div>
-
-            {/* Logo */}
-            {/* <img className="w-14 md:w-20  " src={img} alt="logo" /> */}
+            <img className="w-10 md:w-10" src={img} alt="logo" />
           </div>
 
-          {/* Center - Desktop NavLinks */}
-          {/* <div className="  hidden   ">
-            <NavLinks navbarLinks={NavberLinks} mode="desktop" />
-          </div> */}
+          {/* Center */}
+          <div className="text-white  ">Full Stack Developer - MD KAyesur</div>
 
-          {/* Right - Login Button */}
-          <div className="flex items-center  gap-3">
-            <Link
-              onClick={handleCross}
-              className="btn btn-xs btn-primary  btn-outline">
-              <AiOutlineLogin className="rotate-90" />
-            </Link>
-          </div>
-
-          {/* <ThemeToggle /> */}
+          <div className="text-white"> hi</div>
         </div>
- 
 
+        {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="  lg:hidden pt-4  pb-4">
-             
-              <NavLinks
-            
-                navbarLinks={NavberLinks} 
-                mode="mobile" 
-                onLinkClick={() => setIsMobileMenuOpen(false)} // ✅ Close menu on click
-              />;
-          
+          <div
+            ref={dropdownRef}
+            className="bg-red-400/50 backdrop-blur w-full lg:hidden pt-4 pb-4 relative">
+            <button
+              className="absolute top-2 right-3 text-white text-lg hover:text-red-600"
+              onClick={() => setIsMobileMenuOpen(false)}>
+              ✕
+            </button>
+            <DropdownComponent onClose={() => setIsMobileMenuOpen(false)} />
           </div>
         )}
       </div>
