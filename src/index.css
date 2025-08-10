@@ -14,3 +14,16 @@ body{
     background-color: #1a1d52;
 }
  
+
+@keyframes rgb-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rgb-spin {
+  animation: rgb-spin 4s linear infinite;
+}

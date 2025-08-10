@@ -47,7 +47,7 @@
 //        icon: <FaFont />,
 //       title: "Card.jsx",
 //     },
-   
+
 //   ];
 
 //   return (
@@ -91,8 +91,6 @@
 
 // export default DropdownComponent;
 
-
-
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -124,8 +122,7 @@ const DropdownComponent = ({ onClose }) => {
     <div className="text-sm font-medium text-gray-800">
       <div
         onClick={toggleDropdown}
-        className="flex items-center gap-2 pr-2 cursor-pointer select-none pl-3 w-full"
-      >
+        className="flex items-center gap-2 pr-2 cursor-pointer select-none pl-3 w-full">
         <span className="text-white">MY Portfolio</span>
         {isOpen ? (
           <FaChevronDown className="text-xs text-white" />
@@ -147,9 +144,8 @@ const DropdownComponent = ({ onClose }) => {
                       ? "bg-red-500 text-white"
                       : "hover:bg-gray-200 hover:text-black"
                   }`
-                }
-              >
-                <div className="pl-3 flex gap-2 items-center">
+                }>
+                <div className="pl-3 flex  gap-2 items-center">
                   <span className="text-yellow-500">{navLink.icon}</span>
                   <span>{navLink.title}</span>
                 </div>

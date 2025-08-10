@@ -6,9 +6,7 @@ import { tabs as allTabs } from "../../utils/data/tabs.data";
 import DefaultContent from "./DefaultContent";
 
 const TabsComponent = () => {
-  
-
-   const location = useLocation();
+  const location = useLocation();
   const navigate = useNavigate();
   const [openTabs, setOpenTabs] = useState([]);
 
@@ -47,23 +45,33 @@ const TabsComponent = () => {
     }
   };
   return (
-    <div className="w-11/12 mx-auto overflow-auto md:overflow-hidden h-[calc(100vh-100px)]  md:h-[calc(100vh-100px)]   md:block   -ml-px">
+    <div className="w-11/12 mx-auto   md:pt-0 h-[500px]   -ml-px">
       {openTabs.length > 0 ? (
         <Tabs
           selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
-          onSelect={handleSelect}>
-          <TabList className="border-none w-full cursor-pointer  -mt-1   bg-red-200 flex  ">
+          onSelect={handleSelect}
+          className=" ">
+          <TabList
+            className="
+      border-none w-full cursor-pointer -mt-1 flex   bg-red-200 md:flex
+      overflow-x-auto whitespace-nowrap
+      scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200
+      "
+            style={{ WebkitOverflowScrolling: "touch" }} // iOS smooth scroll
+          >
             {openTabs.map((tab, index) => (
               <Tab
                 key={index}
-                className="relative px-4 py-2   hover:bg-base-300 cor
-           rounded-t-md">
+                className="
+          relative px-4 py-2 rounded-t-md inline-block
+          hover:bg-base-300 cursor-pointer
+          ">
                 <div className="flex items-center gap-3">
                   <span className="text-blue-500">{tab.icon}</span>
                   {tab.tabTitle}
                   <button
                     onClick={(e) => handleClose(e, index)}
-                    className="text-xs text-red-500 cursor-pointer  ">
+                    className="text-xs text-red-500 hidden md:block cursor-pointer">
                     ✕
                   </button>
                 </div>
@@ -71,9 +79,11 @@ const TabsComponent = () => {
             ))}
           </TabList>
 
-          <div className="h-[calc(100vh-100px)]  md:h-[calc(100vh-100px)]    md:overflow-y-scroll ">
+          <div
+            className="h-[calc(100vh-100px)] md:h-[calc(100vh-100px)] md:overflow-y-scroll overflow-x-hidden"
+            style={{ minWidth: 0 }}>
             {openTabs.map((tab, index) => (
-              <TabPanel className="pl-2 mt-2  " key={index}> 
+              <TabPanel className="pl-5  mt-2" key={index}>
                 {tab.tabContent}
               </TabPanel>
             ))}

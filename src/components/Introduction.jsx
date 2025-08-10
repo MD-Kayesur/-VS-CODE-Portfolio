@@ -7,6 +7,7 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import Typed from "typed.js";
 import Font from "react-font";
 import CodeWrapper from "./CodeWrapper";
+import FluidCursor from "../routers/animation/FluidCursor";
 
 const Introduction = () => {
   const el = useRef(null); // reference to the span element
@@ -28,7 +29,8 @@ const Introduction = () => {
 
   return (
     <div>
-      <div className="min-h-screen  bg-[#1a1d52] flex items-center justify-center px-4 overflow-x-hidden">
+
+      <div className="min-h-screen    bg-[#1a1d52] flex   justify-center px-4 overflow-x-hidden">
         <div className="text-white   w-full flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Text Area */}
           <div className="space-y-4">
@@ -53,9 +55,9 @@ const Introduction = () => {
                   animate={{ color: ["#FF5733", "#33FF3C", "#333CFF"] }}
                   transition={{ duration: 5, delay: 1, repeat: Infinity }}>
                   <Font family="Agbalumo">
-                    <h2 className="text-7xl font-bold mb-4 animated-gradient ">
+                    {/* <h2 className="text-7xl font-bold mb-4 animated-gradient ">
                       KAYESUR
-                    </h2>
+                    </h2> */}
                   </Font>
                 </motion.span>{" "}
               </motion.h1>
@@ -105,7 +107,7 @@ const Introduction = () => {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
-                className="absolute w-full h-full rounded-full p-2  
+                className="absolute w-full h-full rounded-full p-2
                      bg-[conic-gradient(from_0deg,green,red,blue,green)]">
                 <div className="w-full h-full bg-black rounded-full"></div>
               </motion.div>
@@ -119,6 +121,7 @@ const Introduction = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

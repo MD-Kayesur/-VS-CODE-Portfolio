@@ -5,8 +5,8 @@ import "./AnimatedBorder.css";
 import CodeWrapper from "../CodeWrapper";
 const About = () => {
   return (
-<CodeWrapper lines={50}>
-    <div className="   p-10  bg-[#1a1d52]  pt-27 lg:pt-0      ">
+ 
+    <div className=" pl-5  bg-[#1a1d52]   pr-5   pb-36  ">
 <div className="  mt-10  flex justify-center "> <h1 className="text-5xl font-bold  text-white">About me</h1></div>
 
       <div className="grid lg:grid-cols-3 mt-10 gap-6">
@@ -25,14 +25,14 @@ const About = () => {
               className="w-20  object-cover"
             />
             <div className="p-4">
-              <p className="text-white text-sm">{data.description}</p>
+              <p className="text-white text-xl">{data.description}</p>
             </div>
           </div>
         </motion.div>
       ))}
       </div>
     </div>
-      </CodeWrapper>
+     
   );
 };
 

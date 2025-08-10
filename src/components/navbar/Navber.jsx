@@ -27,11 +27,11 @@ const Navber = () => {
 
   return (
     <>
-      <div className="bg-[#1a1d52] h-16 z-100 w-full fixed lg:static">
+<div className="bg-[#1a1d52] backdrop-blur-md h-16 z-[100] w-full fixed lg:static">
         <div className="flex justify-between items-center   px-4 py-2">
           {/* Left - Logo and Hamburger */}
           <div className="flex items-center gap-2">
-            <div className="lg:hidden">
+            <div className="hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="btn btn-ghost btn-sm">
@@ -56,7 +56,11 @@ const Navber = () => {
           {/* Center */}
           <div className="text-white  ">Full Stack Developer - MD KAyesur</div>
 
-          <div className="text-white"> hi</div>
+         <div className="flex gap-3 ">
+           <div className="text-white w-4 h-4 bg-yellow-600 rounded-full hover:cursor-pointer"> </div>
+           <div className="text-white hidden w-4 h-4 bg-green-600 rounded-full hover:cursor-pointer"> </div>
+           <div className="text-white hidden w-4 h-4 bg-red-600 rounded-full hover:cursor-pointer"> </div>
+         </div>
         </div>
 
         {/* Mobile Menu */}
