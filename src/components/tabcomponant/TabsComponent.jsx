@@ -4,6 +4,7 @@ import "react-tabs/style/react-tabs.css";
 import { useEffect, useState } from "react";
 import { tabs as allTabs } from "../../utils/data/tabs.data";
 import DefaultContent from "./DefaultContent";
+import DropdownComponent from "../home/DropdownComponent ";
 
 const TabsComponent = () => {
   const location = useLocation();
@@ -44,55 +45,63 @@ const TabsComponent = () => {
       }
     }
   };
+
   return (
-    <div className="w-11/12 mx-auto   md:pt-0 h-[500px]   -ml-px">
-      {openTabs.length > 0 ? (
-        <Tabs
-          selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
-          onSelect={handleSelect}
-          className=" ">
-          <TabList
-            className="
+    <>
+      <div className="w-full mx-auto   border-l-2 border-white    md:pt-0  lg:h-[655px] h-[755px]   -ml-px">
+        {openTabs.length > 0 ? (
+          <Tabs
+            selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
+            onSelect={handleSelect}
+            className=" mt-17 md:mt-0">
+            <TabList
+              className="  
       border-none w-full cursor-pointer -mt-1 flex   bg-red-200 md:flex
       overflow-x-auto whitespace-nowrap
       scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200
       "
-            style={{ WebkitOverflowScrolling: "touch" }} // iOS smooth scroll
-          >
-            {openTabs.map((tab, index) => (
-              <Tab
-                key={index}
-                className="
+              style={{ WebkitOverflowScrolling: "touch" }} // iOS smooth scroll
+            >
+              {openTabs.map((tab, index) => (
+                <Tab
+                  key={index}
+                  className="
           relative px-4 py-2 rounded-t-md inline-block
           hover:bg-base-300 cursor-pointer
           ">
-                <div className="flex items-center gap-3">
-                  <span className="text-blue-500">{tab.icon}</span>
-                  {tab.tabTitle}
-                  <button
-                    onClick={(e) => handleClose(e, index)}
-                    className="text-xs text-red-500 hidden md:block cursor-pointer">
-                    ✕
-                  </button>
-                </div>
-              </Tab>
-            ))}
-          </TabList>
+                  <div className="flex items-center gap-3">
+                    <span className="text-blue-500">{tab.icon}</span>
+                    {tab.tabTitle}
+                    <button
+                      onClick={(e) => handleClose(e, index)}
+                      className="text-xs text-red-500   md:block cursor-pointer">
+                      ✕
+                    </button>
+                  </div>
+                </Tab>
+              ))}
+            </TabList>
 
-          <div
-            className="h-[calc(100vh-100px)] md:h-[calc(100vh-100px)] md:overflow-y-scroll overflow-x-hidden"
-            style={{ minWidth: 0 }}>
-            {openTabs.map((tab, index) => (
-              <TabPanel className="pl-5  mt-2" key={index}>
-                {tab.tabContent}
-              </TabPanel>
-            ))}
-          </div>
-        </Tabs>
-      ) : (
-        <DefaultContent />
-      )}
-    </div>
+            <div
+              className="h-[calc(100vh-100px)] md:h-[calc(100vh-100px)] md:overflow-y-scroll overflow-x-hidden"
+              style={{ minWidth: 0 }}>
+              {openTabs.map((tab, index) => (
+                <TabPanel className="pl-5  mt-2" key={index}>
+                  {tab.tabContent}
+                </TabPanel>
+              ))}
+            </div>
+          </Tabs>
+        ) : (
+          <DefaultContent />
+        )}
+      </div>
+
+
+      
+
+       
+    </>
   );
 };
 

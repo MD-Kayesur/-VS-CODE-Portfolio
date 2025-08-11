@@ -3,7 +3,7 @@ import { navLinks } from "../utils/data/Iconlink.data";
 // Navlinks using in dashbord
 const Navlinks = () => {
   return (
-    <div className="md:w-10  mx-auto  ml-3 md:ml-5    ">
+    <div className="md:w-10  mx-auto  ml-3 md:ml-5  border-r-2 border-white   ">
       <ul className="flex  flex-col items-center gap-28 h-full  ">
         <div className="flex flex-col justify-between items-center gap-3  ">
         <div>

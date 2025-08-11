@@ -1,8 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import img from "../../assets/imgs/1749660883197-removebg-preview.png";
 import DropdownComponent from "../home/DropdownComponent ";
-
-const Navber = () => {
+ const Navber = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -27,11 +26,11 @@ const Navber = () => {
 
   return (
     <>
-<div className="bg-[#1a1d52] backdrop-blur-md h-16 z-[100] w-full fixed lg:static">
+      <div className="bg-[#1a1d52] backdrop-blur-md h-16 z-[100] border-b-2 border-white w-full fixed lg:static">
         <div className="flex justify-between items-center   px-4 py-2">
           {/* Left - Logo and Hamburger */}
           <div className="flex items-center gap-2">
-            <div className="hidden">
+            {/* <div className=" md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="btn btn-ghost btn-sm">
@@ -49,18 +48,37 @@ const Navber = () => {
                   />
                 </svg>
               </button>
+              {/* <img
+                className="w-10 md:w-10  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}"
+                src={img}
+                alt="logo"
+              /> */}
+            {/* </div>  */}
+
+            <div className="">
+              <img
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="w-10 md:w-10 cursor-pointer"
+                src={img}
+                alt="logo"
+              />
             </div>
-            <img className="w-10 md:w-10" src={img} alt="logo" />
           </div>
 
           {/* Center */}
           <div className="text-white  ">Full Stack Developer - MD KAyesur</div>
 
-         <div className="flex gap-3 ">
-           <div className="text-white w-4 h-4 bg-yellow-600 rounded-full hover:cursor-pointer"> </div>
-           <div className="text-white hidden w-4 h-4 bg-green-600 rounded-full hover:cursor-pointer"> </div>
-           <div className="text-white hidden w-4 h-4 bg-red-600 rounded-full hover:cursor-pointer"> </div>
-         </div>
+          <div className="flex gap-3 ">
+            <div className="text-white w-4 h-4 bg-yellow-600 rounded-full hover:cursor-pointer">
+              {" "}
+            </div>
+            <div className="text-white hidden w-4 h-4 bg-green-600 rounded-full hover:cursor-pointer">
+              {" "}
+            </div>
+            <div className="text-white hidden w-4 h-4 bg-red-600 rounded-full hover:cursor-pointer">
+              {" "}
+            </div>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -77,6 +95,9 @@ const Navber = () => {
           </div>
         )}
       </div>
+
+ 
+
     </>
   );
 };
