@@ -94,14 +94,8 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaBootstrap,
-  FaJs,
-  FaReact,
-  FaFont,
-} from "react-icons/fa";
+
+import { DropdownData } from "./DropdownData";
 
 const DropdownComponent = ({ onClose }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -109,14 +103,7 @@ const DropdownComponent = ({ onClose }) => {
     setIsOpen(!isOpen);
   };
 
-  const navLinks = [
-    { link: "/introduction", icon: <FaHtml5 />, title: "Introduction.jsx" },
-    { link: "/about", icon: <FaBootstrap />, title: "About.jsx" },
-    { link: "/skill", icon: <FaReact />, title: "Skill.jsx" },
-    { link: "/projects", icon: <FaCss3Alt />, title: "projects.jsx" },
-    { link: "/contact", icon: <FaJs />, title: "Contact.jsx" },
-    { link: "/card", icon: <FaFont />, title: "Card.jsx" },
-  ];
+
 
   return (
     <div className="text-sm font-medium text-gray-800">
@@ -133,7 +120,7 @@ const DropdownComponent = ({ onClose }) => {
 
       {isOpen && (
         <ul>
-          {navLinks.map((navLink, index) => (
+          {DropdownData.map((navLink, index) => (
             <li key={index} className="mt-2">
               <NavLink
                 to={navLink.link}

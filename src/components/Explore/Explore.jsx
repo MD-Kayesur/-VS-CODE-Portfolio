@@ -1,4 +1,4 @@
-import DropdownComponent from "../home/DropdownComponent ";
+import DropdownComponent from "../dropdown/DropdownComponent ";
 import Tabss from "../tabcomponant/TabsComponent";
 
 const Explore = () => {

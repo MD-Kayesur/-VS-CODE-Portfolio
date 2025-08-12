@@ -1,6 +1,6 @@
-import Navlinks from "../../rightnavlinks/Navlinks";
+import Navlinks from "../rightnavlinks/Navlinks";
 import Explore from "../Explore/Explore";
- import TabsComponent from "../tabcomponant/TabsComponent";
+import TabsComponent from "../tabcomponant/TabsComponent";
 
 const Dashbors = () => {
   return (
@@ -10,10 +10,9 @@ const Dashbors = () => {
           <div className="  flex  ">
             <Navlinks />
           </div>
-         
-            <Explore />
-            <TabsComponent />
-            
+
+          <Explore />
+          <TabsComponent />
         </div>
       </div>
     </>

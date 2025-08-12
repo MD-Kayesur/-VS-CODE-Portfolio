@@ -2,12 +2,12 @@
 
 import React, { useEffect, useRef } from "react";
 import { motion, easeInOut } from "framer-motion";
-import profilePic from "../assets/imgs/1749660883197-removebg-preview.png"; // Replace with your actual image
+import profilePic from "../../assets/imgs/1749660883197-removebg-preview.png"; // Replace with your actual image
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import Typed from "typed.js";
 import Font from "react-font";
-import CodeWrapper from "./CodeWrapper";
-import FluidCursor from "../routers/animation/FluidCursor";
+import CodeWrapper from "../../codeWrapper/CodeWrapper";
+import FluidCursor from "../../animation/FluidCursor";
 
 const Introduction = () => {
   const el = useRef(null); // reference to the span element
@@ -22,8 +22,7 @@ const Introduction = () => {
     });
 
     return () => {
-      // Destroy instance on unmount to prevent memory leaks
-      typed.current.destroy();
+       typed.current.destroy();
     };
   }, []);
 
@@ -34,7 +33,7 @@ const Introduction = () => {
         <div className="text-white   w-full flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Text Area */}
           <div className="space-y-4">
-            <div className="flex">
+            <div className="flex flex-col">
               <h1 className="text-6xl md:text-5xl font-bold">
                 <span className=" md:text-6xl text-5xl text-yellow-400">
                   MD.
@@ -55,9 +54,9 @@ const Introduction = () => {
                   animate={{ color: ["#FF5733", "#33FF3C", "#333CFF"] }}
                   transition={{ duration: 5, delay: 1, repeat: Infinity }}>
                   <Font family="Agbalumo">
-                    {/* <h2 className="text-7xl font-bold mb-4 animated-gradient ">
+                    <h2 className="text-7xl font-bold mb-4 animated-gradient ">
                       KAYESUR
-                    </h2> */}
+                    </h2>
                   </Font>
                 </motion.span>{" "}
               </motion.h1>

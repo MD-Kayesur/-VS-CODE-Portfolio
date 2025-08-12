@@ -1,7 +1,7 @@
 
 
 
-export const NavberLinks = [
+  const NavberLinks = [
     {
       link: "/introduction",
       linkTitle: "Introduction",

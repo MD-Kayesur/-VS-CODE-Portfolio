@@ -1,9 +1,10 @@
-import About from "../../components/About/About";
-import Card from "../../components/Card";
-import Contact from "../../components/contact/Contact";
-import Introduction from "../../components/Introduction";
-import Project from "../../components/Project";
-import Skill from "../../components/Skill";
+import { FaReact } from "react-icons/fa6";
+import About from "../About/About";
+import Card from "../card/Card";
+import Contact from "../contact/Contact";
+import Introduction from "../introduction/Introduction";
+import Project from "../project/Project";
+import Skill from "../skill/Skill";
 import {
   SiExpress,
   SiMongodb,
@@ -13,6 +14,8 @@ import {
   SiJsonwebtokens,
   SiPrisma,
 } from "react-icons/si";
+import Myblog from "../myBlog/Myblog";
+import FeedBack from "../feedBack/FeedBack";
 export const tabs = [
   {
     tabTitle: "About.jsx",
@@ -49,5 +52,17 @@ export const tabs = [
     icon: <SiFirebase /> ,
     tabContent: <Card></Card>,
     path: "/card",
+  },
+  {
+    tabTitle: "myblog.jsx",
+    icon: <FaReact /> ,
+    tabContent: <Myblog></Myblog>,
+    path: "/myblog",
+  },
+  {
+    tabTitle: "feedback.jsx",
+    icon: <SiMongoose /> ,
+    tabContent: <FeedBack></FeedBack>,
+    path: "/feedback",
   },
 ];

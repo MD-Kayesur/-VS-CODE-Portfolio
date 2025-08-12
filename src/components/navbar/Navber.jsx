@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import img from "../../assets/imgs/1749660883197-removebg-preview.png";
-import DropdownComponent from "../home/DropdownComponent ";
- const Navber = () => {
+import DropdownComponent from "../dropdown/DropdownComponent ";
+const Navber = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -28,33 +28,7 @@ import DropdownComponent from "../home/DropdownComponent ";
     <>
       <div className="bg-[#1a1d52] backdrop-blur-md h-16 z-[100] border-b-2 border-white w-full fixed lg:static">
         <div className="flex justify-between items-center   px-4 py-2">
-          {/* Left - Logo and Hamburger */}
           <div className="flex items-center gap-2">
-            {/* <div className=" md:hidden">
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="btn btn-ghost btn-sm">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-              {/* <img
-                className="w-10 md:w-10  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}"
-                src={img}
-                alt="logo"
-              /> */}
-            {/* </div>  */}
-
             <div className="">
               <img
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -72,12 +46,7 @@ import DropdownComponent from "../home/DropdownComponent ";
             <div className="text-white w-4 h-4 bg-yellow-600 rounded-full hover:cursor-pointer">
               {" "}
             </div>
-            <div className="text-white hidden w-4 h-4 bg-green-600 rounded-full hover:cursor-pointer">
-              {" "}
-            </div>
-            <div className="text-white hidden w-4 h-4 bg-red-600 rounded-full hover:cursor-pointer">
-              {" "}
-            </div>
+             
           </div>
         </div>
 
@@ -95,9 +64,6 @@ import DropdownComponent from "../home/DropdownComponent ";
           </div>
         )}
       </div>
-
- 
-
     </>
   );
 };

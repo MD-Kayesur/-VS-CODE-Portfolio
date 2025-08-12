@@ -83,19 +83,21 @@ export const navLinks = [
   },
   {
     title: "Figma",
-    path: "/",
+    path: "/about",
     icon: <PiFigmaLogo className=" md:text-3xl  text-white" />,
     isDropdown: true,
     dropdownItems: ["Profile"],
   },
   {
     title: "Account",
+       path: "/feedback",
     icon: <VscAccount className=" md:text-3xl  text-white" />,
     isDropdown: true,
     dropdownItems: ["Profile"],
   },
   {
     title: "Settings",
+    path: "/myblog",
     icon: <LuSettings className=" md:text-3xl  text-white" />,
     isDropdown: true,
     dropdownItems: ["Profile"],

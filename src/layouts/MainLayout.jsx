@@ -10,23 +10,28 @@ const MainLayout = () => {
   console.log(current);
 
   return (
-    <div className="h-screen flex flex-col">
-      <Navber />
-      <div className="md:hidden">
-        <TabsComponent></TabsComponent>
-      </div>
-      <div className="flex-grow   md:block  overflow-auto">
-        <div className="ml-3  md:hidden">
-          <Outlet />
-        </div>
+    <div className="flex flex-col min-h-screen">
+  {/* Navbar */}
+  <Navber />
 
-        <div className="md:block hidden">
-          <Dashbors />
-        </div>
-      </div>
-
-      <Footer />
+  {/* Scrollable Content */}
+  <main className="flex-grow overflow-auto">
+    <div className="md:hidden">
+      <TabsComponent />
     </div>
+
+    <div className="ml-3 hidden md:hidden">
+      <Outlet />
+    </div>
+
+    <div className="md:block hidden">
+      <Dashbors />
+    </div>
+  </main>
+
+  {/* Footer */}
+  <Footer />
+</div>
   );
 };
 

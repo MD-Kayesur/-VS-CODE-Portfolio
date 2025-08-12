@@ -2,9 +2,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { useEffect, useState } from "react";
-import { tabs as allTabs } from "../../utils/data/tabs.data";
+import { tabs as allTabs } from "./tabs.data";
 import DefaultContent from "./DefaultContent";
-import DropdownComponent from "../home/DropdownComponent ";
+import DropdownComponent from "../dropdown/DropdownComponent ";
 
 const TabsComponent = () => {
   const location = useLocation();
@@ -56,7 +56,7 @@ const TabsComponent = () => {
             className=" mt-17 md:mt-0">
             <TabList
               className="  
-      border-none w-full cursor-pointer -mt-1 flex   bg-red-200 md:flex
+      border-none w-full cursor-pointer -mt-1 flex z-[10] fixed md:sticky bg-red-200 md:flex
       overflow-x-auto whitespace-nowrap
       scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200
       "
@@ -96,11 +96,6 @@ const TabsComponent = () => {
           <DefaultContent />
         )}
       </div>
-
-
-      
-
-       
     </>
   );
 };

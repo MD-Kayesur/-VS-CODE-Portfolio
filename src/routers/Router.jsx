@@ -1,33 +1,31 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 
-import Home from "../components/home/Home";
-import Dashbors from "../components/dashbord/Dashbors";
-import Tabss from "../components/tabcomponant/TabsComponent";
 import About from "../components/About/About";
-import Skill from "../components/Skill";
-import TabsComponent from "../components/tabcomponant/TabsComponent";
-import Project from "../components/Project";
-import Introduction from "../components/Introduction";
+import Skill from "../components/skill/Skill";
+import Project from "../components/project/Project";
+import Introduction from "../components/introduction/Introduction";
 import Contact from "../components/contact/Contact";
-import Card from "../components/Card";
+import Card from "../components/card/Card";
+import Myblog from "../components/myBlog/Myblog";
+import FeedBack from "../components/feedBack/FeedBack";
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
     children: [
-      {
-        path: "/",
-        element: <Home></Home>,
-      },
-      {
-        path: "/tabss",
-        element: <TabsComponent></TabsComponent>,
-      },
+      // {
+      //   path: "/tabss",
+      //   element: <TabsComponent></TabsComponent>,
+      // },
 
       {
         path: "/about",
         element: <About></About>,
+      },
+      {
+        path: "/myblog",
+        element: <Myblog></Myblog>,
       },
       {
         path: "/introduction",
@@ -42,6 +40,10 @@ export const router = createBrowserRouter([
         element: <Project></Project>,
       },
       {
+        path: "/feedback",
+        element: <FeedBack></FeedBack>,
+      },
+      {
         path: "/contact",
         element: <Contact></Contact>,
       },
@@ -51,35 +53,15 @@ export const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "/dashbors",
-    element: <Dashbors />,
-    children: [
+  // {
+  //   path: "/dashbors",
+  //   element: <Dashbors />,
+  //   children: [
 
-       {
-        path: "about",
-        element: <About></About>,
-      },
-      //     // {
-      //     //     path:"Navigation",
-      //     //     element:<Navigation></Navigation>
-      //     // },
-      //     // {
-      //     //     path:"Navbar",
-      //     //     element:<Navbar></Navbar>
-      // },
-    ],
-  },
-  //  {
-  //   path: "/FileNavber",
-  //   element: <FileNavber/>,
-  //   children:[
-  //
-  //     {
-  //       path:"Abbounmens",
-  //       element:<Abbounmens></Abbounmens>
+  //      {
+  //       path: "about",
+  //       element: <About></About>,
   //     },
-
-  //   ]
+  //   ],
   // },
 ]);
