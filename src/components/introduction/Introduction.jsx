@@ -29,7 +29,7 @@ const Introduction = () => {
   return (
     <div>
 
-      <div className="min-h-screen     flex   justify-center px-4 overflow-x-hidden">
+      <div className="h-screen     flex   justify-center px-4 overflow-y-auto">
         <div className="text-white   w-full flex flex-col md:flex-row items-center justify-between gap-6">
            <div className="space-y-4">
             <div className="flex flex-col">

@@ -10,9 +10,8 @@ const MainLayout = () => {
   console.log(current);
 
   return (
-    <div className="mainlayout-text flex flex-col h-screen   ">
-  {/* Navbar */}
-  <Navber />
+    <div className="mainlayout-text flex flex-col h-screen    ">
+ <div className="md:hidden">  <Navber /></div>
 
   {/* Scrollable Content */}
   <main className="flex-grow overflow-auto">
@@ -29,8 +28,7 @@ const MainLayout = () => {
     </div>
   </main>
 
-  {/* Footer */}
-  <Footer />
+   <div className="md:hidden">  <Footer /> </div>
 </div>
   );
 };

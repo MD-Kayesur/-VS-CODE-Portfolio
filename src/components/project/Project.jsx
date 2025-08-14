@@ -4,13 +4,13 @@ import { projects } from "./ProjectsData";
 const Project = () => {
   return (
     <div>
-      <section id="case-study" className="py-32    ">
+      <section id="case-study" className="py-32 h-screen  overflow-y-auto  pb-60 ">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold mb-6 animated-gradient ">
             My Latest Projects
           </h2>
 
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8  ">
             {projects.map((project) => (
               <div className="flex flex-col md:flex-row   rounded-2xl shadow-lg p-6 gap-6 hover:shadow-cyan-500 transition-all">
                 {/* Image Section */}

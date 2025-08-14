@@ -56,7 +56,7 @@ const TabsComponent = () => {
             className=" mt-17 md:mt-0">
             <TabList
               className="  
-      border-none w-full cursor-pointer -mt-1 flex z-[10] fixed md:sticky bg-red-200 md:flex
+      border-none w-full cursor-pointer -mt-1 flex z-[10] fixed md:static  bg-red-200 md:flex
       overflow-x-auto whitespace-nowrap
       scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200
       "
@@ -83,7 +83,7 @@ const TabsComponent = () => {
             </TabList>
 
             <div
-              className="h-[calc(100vh-100px)] md:h-[calc(100vh-100px)] md:overflow-y-scroll overflow-x-hidden"
+              className="   "
               style={{ minWidth: 0 }}>
               {openTabs.map((tab, index) => (
                 <TabPanel className="pl-5  mt-2" key={index}>
