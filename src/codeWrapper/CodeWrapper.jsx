@@ -2,7 +2,7 @@ import React from "react";
 
 const CodeWrapper = ({ children, lines }) => {
   return (
-    <div className="flex  bg-[#1a1d52] text-white font-mono pr-5  rounded-lg shadow-md overflow-auto">
+    <div className="flex    text-white font-mono pr-5  rounded-lg shadow-md overflow-auto">
       {/* Line numbers */}
       <div className="text-right  text-gray-500 select-none">
         {Array.from({ length: lines }, (_, i) => (

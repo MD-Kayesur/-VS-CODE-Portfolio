@@ -15,7 +15,7 @@ const Introduction = () => {
 
   useEffect(() => {
     typed.current = new Typed(el.current, {
-      strings: ["FrontEnd Developer", "Web Designer", "MERN Stack Developer"],
+      strings: ["FRONTEND DEVELOPER", "MERN-STACK DEVELOPER"],
       typeSpeed: 100,
       backSpeed: 50,
       loop: true,
@@ -29,8 +29,8 @@ const Introduction = () => {
   return (
     <div>
 
-      <div className="h-screen     flex   justify-center px-4 overflow-y-auto">
-        <div className="text-white   w-full flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="h-screen pt-20  pl-3  flex  pb-10  justify-center   overflow-y-auto">
+        <div className="text-white   w-full flex flex-col lg:flex-row items-start   gap-14">
            <div className="space-y-4">
             <div className="flex flex-col">
               <h1 className="text-6xl md:text-5xl font-bold">
@@ -61,13 +61,13 @@ const Introduction = () => {
               </motion.h1>
             </div>
 
-            <p className="   ">
+            <p className=" lg:w-[700px]  ">
               Front-End Developer crafting high-performance, responsive, and
               user-friendly web applications using modern technologies, clean
               code, and best practices for seamless user experiences.
             </p>
             <h2 className="text-xl text-tomato-400 font-bold ">
-              i am <span className="text-2xl" ref={el}></span>
+              I AM <span className="text-2xl" ref={el}></span>
             </h2>
             <div className="flex items-center gap-3">
               <a
@@ -100,7 +100,7 @@ const Introduction = () => {
               <img
                 src={profilePic}
                 alt="Profile"
-                className="w-60 bg-base-300 h-60 bg-cover rounded-full object-cover z-10 absolute"
+                className="w-60 mx-auto bg-base-300 h-60 bg-cover rounded-full object-cover z-10 absolute"
               />
             </div>
           </div>

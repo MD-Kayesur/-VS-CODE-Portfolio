@@ -29,3 +29,10 @@ body{
 .animate-rgb-spin {
   animation: rgb-spin 4s linear infinite;
 }
+
+
+.tooltip:focus::before,
+.tooltip:focus::after {
+  display: none !important;
+}
+ 

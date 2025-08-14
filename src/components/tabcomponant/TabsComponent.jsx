@@ -48,15 +48,15 @@ const TabsComponent = () => {
 
   return (
     <>
-      <div className="w-full mx-auto cursor-pointer  border-l-2 border-white    md:pt-0     -ml-px">
+      <div className="w-full mx-auto cursor-pointer  border-l-1 border-white      md:mt:20   -ml-px">
         {openTabs.length > 0 ? (
           <Tabs
             selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
             onSelect={handleSelect}
-            className=" mt-17 md:mt-0">
+            className=" mt-10 md:-mt-1">
             <TabList
               className="  
-      border-none w-full cursor-pointer -mt-1 flex z-[10] fixed md:static  bg-red-200 md:flex
+      border-none w-full cursor-pointer   flex z-10 md:hidden fixed -mt-1 lg:block  bg-red-200  
       overflow-x-auto whitespace-nowrap
       scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200
       "
@@ -66,7 +66,7 @@ const TabsComponent = () => {
                 <Tab
                   key={index}
                   className="
-          relative px-4 py-2 text-green-900 rounded-t-md inline-block
+          relative px-4 py-2 text-green-900 md:mt:20 rounded-t-md inline-block
           hover:bg-base-300 cursor-pointer
           ">
                   <div className="flex items-center gap-3">
@@ -86,7 +86,7 @@ const TabsComponent = () => {
               className="   "
               style={{ minWidth: 0 }}>
               {openTabs.map((tab, index) => (
-                <TabPanel className="pl-5  mt-2" key={index}>
+                <TabPanel className="md:pl-5  mt-2" key={index}>
                   {tab.tabContent}
                 </TabPanel>
               ))}

@@ -20,7 +20,7 @@ const Dashbors = () => {
         <Footer /> 
       </div> */}
 
-   <div className="w-full h-screen flex flex-col overflow-hidden">
+   <div className="w-full  h-screen flex flex-col overflow-hidden md:overflow-hidden lg:overflow-hidden">
   {/* Navbar always on top */}
   <Navber />
 

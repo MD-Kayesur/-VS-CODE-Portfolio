@@ -27,8 +27,8 @@ const Navber = () => {
 
   return (
     <>
-      <div className="   backdrop-blur-md h-16 z-[100] border-b-2 border-white w-full fixed lg:static">
-        <div className="flex justify-between items-center   px-4 py-2">
+      <div className="   backdrop-blur-md h-10 z-100 border-b-1 border-white w-full fixed lg:static">
+        <div className="flex justify-between items-center   px-4 ">
           <div className="flex items-center gap-2">
             <div className="">
               <img
@@ -41,7 +41,7 @@ const Navber = () => {
           </div>
 
           {/* Center */}
-          <div className="text-white  ">Full Stack Developer - MD KAyesur</div>
+          <div className="text-white   "><span className="md:hidden">Portfolio</span> - »★𝙈𝘿★—͟͞͞★ 𝑘àʸę𝕤𝘂𝐫 ★</div>
 
           <div className="flex items-center gap-3 ">
             {/* <ThemeToggle></ThemeToggle> */}

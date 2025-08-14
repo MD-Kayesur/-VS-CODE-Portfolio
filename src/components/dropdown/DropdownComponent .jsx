@@ -106,11 +106,11 @@ const DropdownComponent = ({ onClose }) => {
 
 
   return (
-    <div className="text-sm font-medium  ">
+    <div className="  font-medium  ">
       <div
         onClick={toggleDropdown}
-        className="flex items-center gap-2 pr-2 cursor-pointer select-none pl-3 w-full">
-        <span className=" ">MY Portfolio</span>
+        className="flex items-center h-1 gap-2 pr-2 cursor-pointer select-none pl-3 w-full">
+        <span className=" ">My Portfolio</span>
         {isOpen ? (
           <FaChevronDown className="text-xs  " />
         ) : (

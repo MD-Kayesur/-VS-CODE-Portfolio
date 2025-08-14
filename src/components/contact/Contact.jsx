@@ -6,8 +6,8 @@ import ContactLinks from "./ContactLinks";
 export default function Contact() {
   return (
     <div>
-      <CodeWrapper lines={44}>
-        <div className="  h-screen  pb-50 pt-20 pl-4  text-white font-mono  rounded-md   overflow-y-auto  ">
+ 
+        <div className="  h-screen md:pb-20 lg:pb-50 pt-20 pl-3 mb-10 text-white font-mono  rounded-md   overflow-y-auto  ">
           <div className="flex justify-center items-center text-2xl md:text-5xl font-bold">
             <Font family="Agbalumo ">
               <h1 font-Agbalumo className="  text-green-400 ">
@@ -21,7 +21,7 @@ export default function Contact() {
 
           <ContactForm></ContactForm>
         </div>
-      </CodeWrapper>
+     
     </div>
   );
 }

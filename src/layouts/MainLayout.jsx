@@ -14,16 +14,16 @@ const MainLayout = () => {
  <div className="md:hidden">  <Navber /></div>
 
   {/* Scrollable Content */}
-  <main className="flex-grow overflow-auto">
-    <div className="md:hidden">
+  <main className="flex-grow  overflow-auto">
+    <div className="md:hidden md:pt-30">
       <TabsComponent />
     </div>
 
-    <div className="ml-3 hidden md:hidden">
+    <div className="ml-3  hidden md:hidden">
       <Outlet />
     </div>
 
-    <div className="md:block hidden">
+    <div className="md:block  hidden">
       <Dashbors />
     </div>
   </main>

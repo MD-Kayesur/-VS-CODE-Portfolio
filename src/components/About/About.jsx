@@ -5,7 +5,7 @@ import "./AnimatedBorder.css";
 import CodeWrapper from "../../codeWrapper/CodeWrapper";
 const About = () => {
   return (
-    <div className=" pl-5 md:pb-30 md:pt-20   h-screen overflow-y-auto   pr-5     ">
+    <div className=" md:pb-30 pt-20   h-screen overflow-y-auto   pr-5     ">
       <div className="     flex justify-center ">
         {" "}
         <h1 className="text-5xl font-bold   ">About me</h1>

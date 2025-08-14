@@ -4,8 +4,8 @@ import { projects } from "./ProjectsData";
 const Project = () => {
   return (
     <div>
-      <section id="case-study" className="py-32 h-screen  overflow-y-auto  pb-60 ">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="case-study" className=" h-screen pt-20 pl-3  overflow-y-auto  pb-20 lg:pb-50 ">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-6 animated-gradient ">
             My Latest Projects
           </h2>
