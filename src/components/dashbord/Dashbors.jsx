@@ -6,7 +6,7 @@ const Dashbors = () => {
   return (
     <>
       <div className="overflow-hidden   w-full ">
-        <div className="  flex   ">
+        <div className="  flex  h-[760px] ">
           <div className="  flex  ">
             <Navlinks />
           </div>
@@ -15,6 +15,9 @@ const Dashbors = () => {
           <TabsComponent />
         </div>
       </div>
+
+   
+
     </>
   );
 };

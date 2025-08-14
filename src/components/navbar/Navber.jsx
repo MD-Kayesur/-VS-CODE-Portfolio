@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import img from "../../assets/imgs/1749660883197-removebg-preview.png";
 import DropdownComponent from "../dropdown/DropdownComponent ";
+import ThemeToggle from "../../togglethem/ThemeToggle";
 const Navber = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -26,7 +27,7 @@ const Navber = () => {
 
   return (
     <>
-      <div className="bg-[#1a1d52] backdrop-blur-md h-16 z-[100] border-b-2 border-white w-full fixed lg:static">
+      <div className="   backdrop-blur-md h-16 z-[100] border-b-2 border-white w-full fixed lg:static">
         <div className="flex justify-between items-center   px-4 py-2">
           <div className="flex items-center gap-2">
             <div className="">
@@ -42,7 +43,8 @@ const Navber = () => {
           {/* Center */}
           <div className="text-white  ">Full Stack Developer - MD KAyesur</div>
 
-          <div className="flex gap-3 ">
+          <div className="flex items-center gap-3 ">
+            {/* <ThemeToggle></ThemeToggle> */}
             <div className="text-white w-4 h-4 bg-yellow-600 rounded-full hover:cursor-pointer">
               {" "}
             </div>
@@ -69,3 +71,24 @@ const Navber = () => {
 };
 
 export default Navber;
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

@@ -48,7 +48,7 @@ const TabsComponent = () => {
 
   return (
     <>
-      <div className="w-full mx-auto   border-l-2 border-white    md:pt-0  lg:h-[655px] h-[755px]   -ml-px">
+      <div className="w-full mx-auto cursor-pointer  border-l-2 border-white    md:pt-0     -ml-px">
         {openTabs.length > 0 ? (
           <Tabs
             selectedIndex={selectedIndex === -1 ? 0 : selectedIndex}
@@ -66,7 +66,7 @@ const TabsComponent = () => {
                 <Tab
                   key={index}
                   className="
-          relative px-4 py-2 rounded-t-md inline-block
+          relative px-4 py-2 text-green-900 rounded-t-md inline-block
           hover:bg-base-300 cursor-pointer
           ">
                   <div className="flex items-center gap-3">

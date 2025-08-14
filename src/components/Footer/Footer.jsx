@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer bg-[#1a1d52] border-t-2 flex justify-between border-white sm:footer-horizontal z-150  text-neutral-content items-center p-4">
+      <footer className="footer   border-t-2 flex justify-between border-white sm:footer-horizontal z-150  text-neutral-content items-center p-4">
         <aside className="grid-flow-col items-center">
          
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>

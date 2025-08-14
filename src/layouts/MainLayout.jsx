@@ -10,7 +10,7 @@ const MainLayout = () => {
   console.log(current);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="mainlayout-text flex flex-col h-screen   ">
   {/* Navbar */}
   <Navber />
 

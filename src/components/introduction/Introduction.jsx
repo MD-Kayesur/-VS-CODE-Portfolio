@@ -29,10 +29,9 @@ const Introduction = () => {
   return (
     <div>
 
-      <div className="min-h-screen    bg-[#1a1d52] flex   justify-center px-4 overflow-x-hidden">
+      <div className="min-h-screen     flex   justify-center px-4 overflow-x-hidden">
         <div className="text-white   w-full flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Text Area */}
-          <div className="space-y-4">
+           <div className="space-y-4">
             <div className="flex flex-col">
               <h1 className="text-6xl md:text-5xl font-bold">
                 <span className=" md:text-6xl text-5xl text-yellow-400">
@@ -84,20 +83,7 @@ const Introduction = () => {
                 <button className="btn btn-info"> Cover Later</button>
               </a>
 
-              {/* <a className="text-3xl" href="https://x.com/Md_Kayesur">
-              {" "}
-              <FaXTwitter></FaXTwitter>{" "}
-            </a>
-            <a
-              className="text-3xl"
-              href="https://www.linkedin.com/in/md-kayesur-rahman-212759317/">
-              {" "}
-              <FaLinkedin></FaLinkedin>{" "}
-            </a>
-            <a className="text-3xl" href="https://github.com/MD-Kayesur">
-              {" "}
-              <FaGithub></FaGithub>{" "}
-            </a> */}
+              
             </div>
           </div>
 
@@ -120,6 +106,9 @@ const Introduction = () => {
           </div>
         </div>
       </div>
+
+    
+
 
     </div>
   );

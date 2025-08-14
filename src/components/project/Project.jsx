@@ -4,7 +4,7 @@ import { projects } from "./ProjectsData";
 const Project = () => {
   return (
     <div>
-      <section id="case-study" className="py-32 bg-[#0D1A43] text-white">
+      <section id="case-study" className="py-32    ">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold mb-6 animated-gradient ">
             My Latest Projects
@@ -12,7 +12,7 @@ const Project = () => {
 
           <div className="flex flex-col gap-8">
             {projects.map((project) => (
-              <div className="flex flex-col md:flex-row bg-[#13254e] rounded-2xl shadow-lg p-6 gap-6 hover:shadow-cyan-500 transition-all">
+              <div className="flex flex-col md:flex-row   rounded-2xl shadow-lg p-6 gap-6 hover:shadow-cyan-500 transition-all">
                 {/* Image Section */}
                 <div className="md:w-1/2 w-full overflow-hidden">
                   <img
@@ -24,13 +24,13 @@ const Project = () => {
 
                 {/* Text Section */}
                 <div className="md:w-1/2 w-full">
-                  <h3 className="text-2xl font-semibold mb-2 text-white">
+                  <h3 className="text-2xl font-semibold mb-2  ">
                     {project.title}
                   </h3>
-                  <p className="text-gray-300 text-sm mb-4">
+                  <p className="  text-sm mb-4">
                     {project.description}
                   </p>
-                  <ul className="list-disc list-inside   flex flex-wrap text-sm mb-4 text-cyan-300">
+                  <ul className="list-disc list-inside   flex flex-wrap text-sm mb-4  ">
                     {project.tech.map((tech, i) => (
                       <li className="mr-5" key={i}>
                         {tech}

@@ -11,9 +11,11 @@
 @tailwind utilities;
 
 body{
-    background-color: #1a1d52;
+    background-color:#1a1d52 ;
 }
- 
+ .mainlayout-text{
+    color: white;
+ }
 
 @keyframes rgb-spin {
   0% {

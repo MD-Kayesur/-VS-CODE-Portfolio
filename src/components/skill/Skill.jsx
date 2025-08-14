@@ -12,7 +12,7 @@ export default function Skill() {
   return (
     <div>
      
-        <div className="  bg-[#1a1d52] text-white px-8    pt-15 md:pt-10   gap-10  flex flex-col  items-center    ">
+        <div className="      px-8    pt-15 md:pt-10   gap-10  flex flex-col  items-center    ">
           <div className="md:w-11/12 mx-auto text-center">
             <h2 className="text-4xl font-bold mb-4 animated-gradient ">
               Front end

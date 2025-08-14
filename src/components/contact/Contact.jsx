@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div>
       <CodeWrapper lines={44}>
-        <div className=" min-h-screen   bg-[#1a1d52] pt-20 pl-4  text-white font-mono  rounded-md     ">
+        <div className="   pb-30   pt-20 pl-4  text-white font-mono  rounded-md     ">
           <div className="flex justify-center items-center text-2xl md:text-5xl font-bold">
             <Font family="Agbalumo ">
               <h1 font-Agbalumo className="  text-green-400 ">

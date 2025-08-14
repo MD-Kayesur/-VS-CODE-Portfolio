@@ -106,15 +106,15 @@ const DropdownComponent = ({ onClose }) => {
 
 
   return (
-    <div className="text-sm font-medium text-gray-800">
+    <div className="text-sm font-medium  ">
       <div
         onClick={toggleDropdown}
         className="flex items-center gap-2 pr-2 cursor-pointer select-none pl-3 w-full">
-        <span className="text-white">MY Portfolio</span>
+        <span className=" ">MY Portfolio</span>
         {isOpen ? (
-          <FaChevronDown className="text-xs text-white" />
+          <FaChevronDown className="text-xs  " />
         ) : (
-          <FaChevronRight className="text-xs text-white" />
+          <FaChevronRight className="text-xs  " />
         )}
       </div>
 
@@ -126,9 +126,9 @@ const DropdownComponent = ({ onClose }) => {
                 to={navLink.link}
                 onClick={onClose} // ✅ click করলে dropdown বন্ধ
                 className={({ isActive }) =>
-                  `block w-full py-1 pl-2 text-sm text-white ${
+                  `block w-full py-1 pl-2 text-sm  ${
                     isActive
-                      ? "bg-red-500 text-white"
+                      ? "bg-red-500  "
                       : "hover:bg-gray-200 hover:text-black"
                   }`
                 }>

@@ -21,7 +21,7 @@ useEffect(() => {
 
   return (
     <div className="p-4">
-      <button className="btn btn-primary" onClick={toggleTheme}>
+      <button className="btn btn-sm btn-primary" onClick={toggleTheme}>
         {theme === "light" ? "Dark" : "Light"}
       </button>
     </div>
