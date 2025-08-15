@@ -8,7 +8,7 @@ const ContactForm = () => {
     const form = e.target;
     const email = form.email.value;
 
-    console.log(email);
+    
     return Swal.fire({
       title: "Good job!",
       text: "Thank You so much for massager me ",

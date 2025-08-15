@@ -6,8 +6,7 @@ import Footer from "../components/Footer/Footer";
 import TabsComponent from "../components/tabcomponant/TabsComponent";
 
 const MainLayout = () => {
-  const current = useLocation();
-  console.log(current);
+  
 
   return (
     <div className="mainlayout-text flex flex-col h-screen    ">

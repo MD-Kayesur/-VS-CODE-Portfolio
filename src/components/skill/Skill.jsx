@@ -12,8 +12,8 @@ export default function Skill() {
   return (
     <div>
      
-        <div className=" h-screen overflow-y-auto pb-40     px-8    pt-20 md:pt-20   gap-10  flex flex-col  items-center    ">
-          <div className="md:w-11/12 mx-auto text-center">
+        <div className=" h-screen overflow-y-auto pb-40         pt-20 md:pt-20   gap-10  flex flex-col  items-center    ">
+          <div className="md:w-full text-center">
             <h2 className="text-4xl font-bold mb-4 animated-gradient ">
               Front end
             </h2>
@@ -30,7 +30,7 @@ export default function Skill() {
                   <div 
                     key={index}
                     className="flex flex-col items-center hover:scale-110 justify-center  w-24">
-                    <div className="text-7xl   mb-2">{skill.icon}</div>
+                    <div className="lg:text-7xl text-5xl  mb-2">{skill.icon}</div>
                     <p className="text-lg text-center">{skill.title}</p>
                   </div>
                 ))}
@@ -57,7 +57,7 @@ export default function Skill() {
                   <div
                     key={index}
                     className="flex flex-col items-center hover:scale-110 justify-center w-24">
-                    <div className="text-7xl mb-2">{skill.icon}</div>
+                    <div className="lg:text-7xl text-5xl mb-2">{skill.icon}</div>
                     <p className="text-lg text-center">{skill.title}</p>
                   </div>
                 ))}

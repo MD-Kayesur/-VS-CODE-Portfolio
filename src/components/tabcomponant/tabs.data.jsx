@@ -5,64 +5,64 @@ import Contact from "../contact/Contact";
 import Introduction from "../introduction/Introduction";
 import Project from "../project/Project";
 import Skill from "../skill/Skill";
-import {
-  SiExpress,
-  SiMongodb,
-  SiMongoose,
-  SiFirebase,
-  SiDatabricks,
-  SiJsonwebtokens,
-  SiPrisma,
+import { 
+  
+  SiSass,
+  SiTypescript
 } from "react-icons/si";
 import Myblog from "../myBlog/Myblog";
 import FeedBack from "../feedBack/FeedBack";
+import { FaCss3Alt, FaHtml5, FaJs, FaMarkdown } from "react-icons/fa";
+import { VscJson } from "react-icons/vsc";
+ 
 export const tabs = [
   {
-    tabTitle: "About.jsx",
-    icon: <SiMongodb /> ,
+    tabTitle: "About.js",
+    icon: <FaJs color="#F7DF1E" />, // JavaScript
     tabContent: <About />,
     path: "/about",
   },
   {
-    tabTitle: "Skill.jsx",
-     icon: <SiExpress /> ,
-    tabContent: <Skill></Skill>,
+    tabTitle: "Skill.json",
+    icon: <VscJson color="#E34F26" />, // JSON
+    tabContent: <Skill />,
     path: "/skill",
   },
   {
-    tabTitle: "Project.jsx",
-     icon: <SiMongoose /> ,
-    tabContent: <Project></Project>,
+    tabTitle: "Project.ts",
+    icon: <SiTypescript color="#3178C6" />, // TypeScript
+    tabContent: <Project />,
     path: "/projects",
   },
   {
-    tabTitle: "Introduction.jsx",
-    icon: <SiJsonwebtokens /> ,
-    tabContent: <Introduction></Introduction>,
+    tabTitle: "Introduction.html",
+    icon: <FaHtml5 color="#E34F26" />, // HTML
+    tabContent: <Introduction />,
     path: "/introduction",
   },
   {
-    tabTitle: "Contact.jsx",
-    icon: <SiDatabricks /> ,
-    tabContent: <Contact></Contact>,
+    tabTitle: "Contact.css",
+    icon: <FaCss3Alt color="#1572B6" />, // TypeScript (TSX)
+    tabContent: <Contact />,
     path: "/contact",
   },
   {
     tabTitle: "Card.jsx",
-    icon: <SiFirebase /> ,
-    tabContent: <Card></Card>,
+    icon: <SiSass color="#CC6699" />, // JSX
+    tabContent: <Card />,
     path: "/card",
   },
   {
-    tabTitle: "myblog.jsx",
-    icon: <FaReact /> ,
-    tabContent: <Myblog></Myblog>,
+    tabTitle: "Myblog.jsx",
+    icon: <FaReact color="#61DAFB" />, // JSX
+    tabContent: <Myblog />,
     path: "/myblog",
   },
   {
-    tabTitle: "feedback.jsx",
-    icon: <SiMongoose /> ,
-    tabContent: <FeedBack></FeedBack>,
+    tabTitle: "Feedback.md",
+    icon: <FaMarkdown color="#000000" />, // Markdown
+    tabContent: <FeedBack />,
     path: "/feedback",
   },
 ];
+

@@ -3,9 +3,9 @@ import { navLinks } from "./Iconlink.data";
 // Navlinks using in dashbord
 const Navlinks = () => {
   return (
-    <div className="md:w-10 ml-3 md:ml-5 lg:pt-5 md:pt-18 md:pr-5 border-r-1 border-white h-screen flex flex-col items-center justify-between">
+    <div className="md:w-10 pl-3 md:ml-3 lg:pt-5 md:pt-15 md:pr-5 lg:overflow-hidden md:overflow-y-auto border-r-1 border-white h-screen flex flex-col items-center lg:justify-between justify-between">
       {/* Top icons */}
-      <ul className="flex flex-col items-center  lg:gap-8 md:gap-2 ">
+      <ul className="flex flex-col items-center  lg:gap-8 md:gap-4 ">
         {navLinks.slice(0, 5).map((link, index) => (
           <li key={index} className="text-white cursor-pointer">
       <div

@@ -109,7 +109,7 @@ const DropdownComponent = ({ onClose }) => {
     <div className="  font-medium  ">
       <div
         onClick={toggleDropdown}
-        className="flex items-center h-1 gap-2 pr-2 cursor-pointer select-none pl-3 w-full">
+        className="flex items-center h-2 gap-2 pr-2 cursor-pointer select-none pl-3 w-full">
         <span className=" ">My Portfolio</span>
         {isOpen ? (
           <FaChevronDown className="text-xs  " />
@@ -133,7 +133,7 @@ const DropdownComponent = ({ onClose }) => {
                   }`
                 }>
                 <div className="pl-3 flex  gap-2 items-center">
-                  <span className="text-yellow-500">{navLink.icon}</span>
+                  <span className=" ">{navLink.icon}</span>
                   <span>{navLink.title}</span>
                 </div>
               </NavLink>
