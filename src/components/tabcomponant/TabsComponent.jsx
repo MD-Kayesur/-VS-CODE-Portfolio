@@ -66,7 +66,7 @@ const TabsComponent = () => {
                 <Tab
                   key={index}
                   className="
-          relative px-2 py-2 text-green-900 md:mt:20 rounded-t-md inline-block
+          relative px-2 py-2 text-green-900 md:mt:20   rounded-t-md inline-block
           hover:bg-base-300 cursor-pointer
           ">
                   <div className="flex items-center gap-2">

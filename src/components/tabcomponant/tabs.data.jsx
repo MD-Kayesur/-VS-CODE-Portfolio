@@ -14,6 +14,7 @@ import Myblog from "../myBlog/Myblog";
 import FeedBack from "../feedBack/FeedBack";
 import { FaCss3Alt, FaHtml5, FaJs, FaMarkdown } from "react-icons/fa";
 import { VscJson } from "react-icons/vsc";
+import AddBlog from "../myBlog/addBlog";
  
 export const tabs = [
   {
@@ -60,9 +61,15 @@ export const tabs = [
   },
   {
     tabTitle: "Feedback.md",
-    icon: <FaMarkdown color="#000000" />, // Markdown
+    icon: <FaMarkdown color="#1572B6" />, // Markdown
     tabContent: <FeedBack />,
     path: "/feedback",
+  },
+  {
+    tabTitle: "AddBlog.md",
+    icon: <FaMarkdown color="#1572B6" />, // Markdown
+    tabContent: <AddBlog />,
+    path: "/addblog",
   },
 ];
 

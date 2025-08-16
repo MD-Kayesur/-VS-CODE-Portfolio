@@ -20,6 +20,7 @@ export const DropdownData = [
   { link: "/myblog", icon: <FaReact color="#61DAFB" />, title: "Myblog.jsx" }, // React JSX
   { link: "/card", icon: <SiSass color="#CC6699" />, title: "Card.scss" }, // Sass
   { link: "/contact", icon: <FaCss3Alt color="#1572B6" />, title: "Contact.css" }, // CSS
-  { link: "/feedback", icon: <FaMarkdown color="#000000" />, title: "Feedback.md" }, // Markdown
+  { link: "/feedback", icon: < FaMarkdown color="#1572B6" />, title: "Feedback.md" }, // Markdown
+  { link: "/addblog", icon: < FaMarkdown color="#1572B6" />, title: "AddBlog.md" }, // Markdown
 
 ];

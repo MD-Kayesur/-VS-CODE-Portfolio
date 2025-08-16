@@ -9,6 +9,7 @@ import Contact from "../components/contact/Contact";
 import Card from "../components/card/Card";
 import Myblog from "../components/myBlog/Myblog";
 import FeedBack from "../components/feedBack/FeedBack";
+import AddBlog from "../components/myBlog/addBlog";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
       {
         path: "/myblog",
         element: <Myblog></Myblog>,
+      },
+      {
+        path: "/addblog",
+        element: <AddBlog></AddBlog>,
       },
       {
         path: "/introduction",
